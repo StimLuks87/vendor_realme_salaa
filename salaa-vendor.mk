@@ -204,6 +204,8 @@ PRODUCT_COPY_FILES += \
     vendor/realme/salaa/proprietary/odm/vendor/app/mcRegistry/09070000000000000000000000000000.drbin:$(TARGET_COPY_OUT_ODM)/vendor/app/mcRegistry/09070000000000000000000000000000.drbin \
     vendor/realme/salaa/proprietary/odm/vendor/app/mcRegistry/09080000000000000000000000000000.tlbin:$(TARGET_COPY_OUT_ODM)/vendor/app/mcRegistry/09080000000000000000000000000000.tlbin \
     vendor/realme/salaa/proprietary/odm/vendor/app/mcRegistry/09150000000000000000000000000000.tlbin:$(TARGET_COPY_OUT_ODM)/vendor/app/mcRegistry/09150000000000000000000000000000.tlbin \
+    vendor/realme/salaa/proprietary/system_ext/etc/camera/engineer_camera_config:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/camera/engineer_camera_config \
+    vendor/realme/salaa/proprietary/system_ext/etc/init/init.vtservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.vtservice.rc \
     vendor/realme/salaa/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
     vendor/realme/salaa/proprietary/vendor/app/mcRegistry/020b0000000000000000000000000000.drbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/020b0000000000000000000000000000.drbin \
     vendor/realme/salaa/proprietary/vendor/app/mcRegistry/020b0000000000000000000000000000.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/020b0000000000000000000000000000.tlbin \
@@ -447,11 +449,11 @@ PRODUCT_COPY_FILES += \
     vendor/realme/salaa/proprietary/vendor/etc/init/android.hardware.keymaster@4.0-service.trustonic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.0-service.trustonic.rc \
     vendor/realme/salaa/proprietary/vendor/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc \
     vendor/realme/salaa/proprietary/vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc \
-    vendor/realme/salaa/proprietary/vendor/etc/init/android.hardware.sensors@2.0-service.multihal-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.sensors@2.0-service.multihal-mediatek.rc \
     vendor/realme/salaa/proprietary/vendor/etc/init/atci_service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/atci_service.rc \
     vendor/realme/salaa/proprietary/vendor/etc/init/camerahalserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camerahalserver.rc \
     vendor/realme/salaa/proprietary/vendor/etc/init/chipinfo_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/chipinfo_init.rc \
     vendor/realme/salaa/proprietary/vendor/etc/init/dmc_core.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dmc_core.rc \
+    vendor/realme/salaa/proprietary/vendor/etc/init/em_hidl_user.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/em_hidl_user.rc \
     vendor/realme/salaa/proprietary/vendor/etc/init/fuelgauged_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_init.rc \
     vendor/realme/salaa/proprietary/vendor/etc/init/fuelgauged_nvram_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_nvram_init.rc \
     vendor/realme/salaa/proprietary/vendor/etc/init/gsm0710muxd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/gsm0710muxd.rc \
@@ -1674,7 +1676,7 @@ PRODUCT_PACKAGES += \
     libvia-ril \
     libviagpsrpc \
     libviamipc-ril \
-    libwapi \
+    libwifi-hal-mtk \
     libwifitest \
     libwo \
     libwpfa \
@@ -1770,8 +1772,22 @@ PRODUCT_PACKAGES += \
     vendor.trustonic.tee.tui@1.0 \
     vendor.trustonic.tee@1.0 \
     vendor.trustonic.tee@1.1 \
+    libem_support_jni \
+    libcomutils \
+    libimsma \
+    libimsma_adapt \
+    libimsma_rtp \
+    libimsma_socketwrapper \
+    libmtk_vt_service \
+    libmtk_vt_wrapper \
+    libsignal \
+    libsink-mtk \
+    libsource \
+    libvcodec_cap \
+    libvcodec_capenc \
+    libvt_avsync \
+    vendor.mediatek.hardware.videotelephony-V1-ndk \
     vendor.mediatek.hardware.videotelephony@1.0 \
-    android.hardware.keymaster-V3-ndk_platform_odm \
     libawinicsmartpaparse \
     libormshalclient \
     libpnscr2 \
@@ -1842,6 +1858,7 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.radio@1.0 \
     vendor.oplus.hardware.touch@1.0 \
     HotwordEnrollmentOKGoogleCORTEXM4 \
+    EngineerMode \
     com.android.hotwordenrollment.common.util \
     vendor.oplus.hardware.mtkmodemaci-V1.0-java \
     vendor.oplus.hardware.performance-V1.0-java \
@@ -1869,6 +1886,7 @@ PRODUCT_PACKAGES += \
     doeapp-memtester \
     doeapp-sat \
     dtc_vendor \
+    em_hidl \
     epdg_wod \
     fuelgauged \
     fuelgauged_nvram \
@@ -1878,7 +1896,6 @@ PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.0-service.trustonic \
     android.hardware.neuralnetworks@1.3-service-mtk-neuron \
     android.hardware.secure_element@1.2-service-mediatek \
-    android.hardware.sensors@2.0-service.multihal-mediatek \
     camerahalserver \
     mtkfusionrild \
     tetheroffloadservice \
@@ -1932,6 +1949,7 @@ PRODUCT_PACKAGES += \
     wmt_launcher \
     wmt_loader \
     xcap \
+    vtservice \
     engineer_vendor_shell \
     vendor.oplus.hardware.biometrics.fingerprint@2.1-service \
     vendor.oplus.hardware.charger@1.0-service \
