@@ -615,7 +615,6 @@ PRODUCT_PACKAGES += \
     libJpgEncPipe \
     libMcClient \
     libTEECommon \
-    libaedv \
     libapu_mdw \
     libapusys \
     libapusys_edma \
