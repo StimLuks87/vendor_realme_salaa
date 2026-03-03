@@ -204,8 +204,8 @@ PRODUCT_COPY_FILES += \
     vendor/realme/salaa/proprietary/odm/vendor/app/mcRegistry/09070000000000000000000000000000.drbin:$(TARGET_COPY_OUT_ODM)/vendor/app/mcRegistry/09070000000000000000000000000000.drbin \
     vendor/realme/salaa/proprietary/odm/vendor/app/mcRegistry/09080000000000000000000000000000.tlbin:$(TARGET_COPY_OUT_ODM)/vendor/app/mcRegistry/09080000000000000000000000000000.tlbin \
     vendor/realme/salaa/proprietary/odm/vendor/app/mcRegistry/09150000000000000000000000000000.tlbin:$(TARGET_COPY_OUT_ODM)/vendor/app/mcRegistry/09150000000000000000000000000000.tlbin \
+    vendor/realme/salaa/proprietary/system/etc/public.libraries-mtk.txt:$(TARGET_COPY_OUT_SYSTEM)/etc/public.libraries-mtk.txt \
     vendor/realme/salaa/proprietary/system_ext/etc/camera/engineer_camera_config:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/camera/engineer_camera_config \
-    vendor/realme/salaa/proprietary/system_ext/etc/init/init.vtservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.vtservice.rc \
     vendor/realme/salaa/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
     vendor/realme/salaa/proprietary/vendor/app/mcRegistry/020b0000000000000000000000000000.drbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/020b0000000000000000000000000000.drbin \
     vendor/realme/salaa/proprietary/vendor/app/mcRegistry/020b0000000000000000000000000000.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/020b0000000000000000000000000000.tlbin \
@@ -615,11 +615,6 @@ PRODUCT_PACKAGES += \
     libJpgEncPipe \
     libMcClient \
     libTEECommon \
-    libapu_mdw \
-    libapusys \
-    libapusys_edma \
-    libarmnn \
-    libarmnn_ndk.mtk.vndk \
     libaudiocompensationfilter_vendor \
     libaudioprimarydevicehalifclient \
     libbluetooth_mtk \
@@ -628,12 +623,7 @@ PRODUCT_PACKAGES += \
     libbluetoothem_mtk \
     libbt-vendor \
     libbwc \
-    libcapctrl \
     libcares_naptr \
-    libcarrierconfig \
-    libccci_util \
-    libcmdl \
-    libcmdl_ndk.mtk.vndk \
     libconnfem \
     libcrypto-md \
     libcrypto-ss \
@@ -661,18 +651,9 @@ PRODUCT_PACKAGES += \
     libmsnr \
     libmtcloader \
     libmtkares \
-    libmtkcutils \
     libmtkhardware_legacy \
     libmtklimiter_vendor \
-    libmtknetutils \
-    libmtkproperty \
-    libmtkrillog \
     libmtkshifter_vendor \
-    libmtksysutils \
-    libneuroeara \
-    libneuron_graph_delegate.mtk \
-    libneuropilot_hal_utils \
-    libnir_neon_driver_ndk.mtk.vndk \
     libnvram \
     libnvram_sec \
     libpixelflinger \
@@ -682,15 +663,13 @@ PRODUCT_PACKAGES += \
     libssl-ss \
     libsysenv \
     libteeservice_client.trustonic \
-    libtflite_mtk \
     libthha \
     libvcodec_oal \
     libverno \
     libvpu \
     libvpu5 \
     libmtk_drvb \
-    libnir_neon_driver \
-    vendor.mediatek.hardware.apuware.utils@2.0 \
+    vendor.mediatek.hardware.videotelephony@1.0_vendor \
     vendor.oplus.hardware.commondcs@1.0 \
     audio.primary.mt6785 \
     audio.r_submix.mt6785 \
@@ -752,6 +731,8 @@ PRODUCT_PACKAGES += \
     libvpud_vcodec \
     libvt_custom \
     vendor.mediatek.hardware.rcs@2.0 \
+    APUWareUtilsServer \
+    APUWareXrpServer \
     AVCSecureVdecCA \
     VP9SecureVdecCA \
     arm.graphics-V1-ndk_platform \
@@ -1433,6 +1414,9 @@ PRODUCT_PACKAGES += \
     libakm \
     libapmonitor_vendor \
     libappgamepq \
+    libapu_mdw \
+    libapusys \
+    libapusys_edma \
     libarcsoft_distortion_correction \
     libarcsoft_dualcam_bokeh_api \
     libarcsoft_dualcam_refocus_left \
@@ -1449,6 +1433,8 @@ PRODUCT_PACKAGES += \
     libarcsoft_smart_denoise \
     libarcsoft_supervideostabilization \
     libarcsoft_videostabilizer \
+    libarmnn \
+    libarmnn_ndk.mtk.vndk \
     libasn1c_core \
     libasn1c_mapi \
     libasn1c_mdmi \
@@ -1494,8 +1480,13 @@ PRODUCT_PACKAGES += \
     libcameracustom.eis \
     libcameracustom.plugin \
     libcameracustom \
+    libcapctrl \
+    libcarrierconfig \
+    libccci_util \
     libcharon-ss \
     libchromanr \
+    libcmdl \
+    libcmdl_ndk.mtk.vndk \
     libcodec2_mtk_c2store \
     libcodec2_mtk_vdec \
     libcodec2_mtk_venc \
@@ -1627,14 +1618,23 @@ PRODUCT_PACKAGES += \
     libmtkcam_vsync_util \
     libmtkconfig \
     libmtkconfigutils \
+    libmtkcutils \
     libmtkisp_metadata \
     libmtkmipc-ril \
     libmtknetcap \
+    libmtknetutils \
+    libmtkproperty \
+    libmtkrillog \
     libmtkrilutils \
+    libmtksysutils \
     libmtktinyxml \
     libmtkutils \
+    libneuroeara \
     libneuron_adapter \
+    libneuron_graph_delegate.mtk_vendor \
     libneuron_platform \
+    libneuropilot_hal_utils \
+    libnir_neon_driver_ndk.mtk.vndk \
     libnxp_extamp_intf \
     libocam_common \
     liboplus.aishutter \
@@ -1664,6 +1664,7 @@ PRODUCT_PACKAGES += \
     libstface_fd_api \
     libstorage_otp \
     libstrongswan \
+    libtflite_mtk_vendor \
     libtlcWidevineModularDrm \
     libtranslator_mapi_v3.0 \
     libtranslator_mdmi_v2.8.2 \
@@ -1685,6 +1686,7 @@ PRODUCT_PACKAGES += \
     libmcv_runtime.mtk \
     libneuron_runtime.5 \
     libneuron_runtime \
+    libnir_neon_driver \
     libpq_prot \
     libmtkcam_streaminfo_plugin-p1stt \
     ov02b1b_mipi_mono_IdxMgr \
@@ -1714,7 +1716,8 @@ PRODUCT_PACKAGES += \
     salaa_qtech_main_s5kgm1sp_IdxMgr \
     salaa_qtech_main_s5kgm1sp_tuning \
     vendor.mediatek.hardware.apmonitor@2.0 \
-    vendor.mediatek.hardware.apuware.xrp@1.0 \
+    vendor.mediatek.hardware.apuware.utils@2.0_vendor \
+    vendor.mediatek.hardware.apuware.xrp@1.0_vendor \
     vendor.mediatek.hardware.camera.atms@1.0 \
     vendor.mediatek.hardware.camera.bgservice@1.0 \
     vendor.mediatek.hardware.camera.bgservice@1.1 \
@@ -1767,26 +1770,45 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.pq@2.7 \
     vendor.mediatek.hardware.pq@2.8 \
     vendor.mediatek.hardware.pq@2.9 \
-    vendor.mediatek.hardware.videotelephony@1.0_vendor \
     vendor.trustonic.tee.tui@1.0 \
     vendor.trustonic.tee@1.0 \
     vendor.trustonic.tee@1.1 \
     libem_support_jni \
-    libcomutils \
-    libimsma \
-    libimsma_adapt \
-    libimsma_rtp \
-    libimsma_socketwrapper \
-    libmtk_vt_service \
-    libmtk_vt_wrapper \
-    libsignal \
-    libsink-mtk \
-    libsource \
-    libvcodec_cap \
-    libvcodec_capenc \
-    libvt_avsync \
-    vendor.mediatek.hardware.videotelephony-V1-ndk \
-    vendor.mediatek.hardware.videotelephony@1.0 \
+    libapuwareapusys.mtk \
+    libapuwareapusys_v2.mtk \
+    libapuwarehmp.mtk \
+    libapuwareutils.mtk \
+    libapuwareutils_v2.mtk \
+    libapuwarexrp.mtk \
+    libapuwarexrp_v2.mtk \
+    libarmnn_ndk.mtk \
+    libcmdl_ndk.mtk \
+    libmvpu_cic_ci_compiler.mtk \
+    libmvpu_clc_mvpu_debuginfo.mtk \
+    libmvpu_clc_mvpu_elf.mtk \
+    libmvpu_clc_mvpu_utility.mtk \
+    libmvpu_config.mtk \
+    libmvpu_engine.mtk \
+    libmvpu_engine_pub.mtk \
+    libmvpu_pattern.mtk \
+    libmvpu_pattern_pub.mtk \
+    libmvpu_runtime.mtk \
+    libmvpu_runtime_pub.mtk \
+    libmvpuop_mtk_cv.mtk \
+    libmvpuop_mtk_nn.mtk \
+    libneuron_graph_delegate.mtk \
+    libneuronusdk_adapter.mtk \
+    libnir_neon_driver_ndk.mtk \
+    libtflite_mtk.mtk \
+    libtflite_mtk \
+    vendor.mediatek.hardware.apuware.apusys@1.0 \
+    vendor.mediatek.hardware.apuware.apusys@2.0 \
+    vendor.mediatek.hardware.apuware.apusys@2.1 \
+    vendor.mediatek.hardware.apuware.hmp@1.0 \
+    vendor.mediatek.hardware.apuware.utils@1.0 \
+    vendor.mediatek.hardware.apuware.utils@2.0 \
+    vendor.mediatek.hardware.apuware.xrp@1.0 \
+    vendor.mediatek.hardware.apuware.xrp@2.0 \
     libawinicsmartpaparse \
     libormshalclient \
     libpnscr2 \
@@ -1948,7 +1970,6 @@ PRODUCT_PACKAGES += \
     wmt_launcher \
     wmt_loader \
     xcap \
-    vtservice \
     engineer_vendor_shell \
     vendor.oplus.hardware.biometrics.fingerprint@2.1-service \
     vendor.oplus.hardware.charger@1.0-service \
@@ -1961,7 +1982,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     vendor_lib_libmtk_drvb_so \
-    vendor_lib_libnir_neon_driver_so \
     vendor_lib64_hw_vulkan_mt6785_so \
     vendor_lib64_hw_kmsetkey_default_so \
     vendor_lib64_hw_gatekeeper_trustonic_so \

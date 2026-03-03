@@ -176,215 +176,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libapu_mdw",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libapu_mdw.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libdmabufheap",
-                "liblog",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libapu_mdw.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libdmabufheap",
-                "liblog",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libapusys",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libapusys.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "liblog",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libapusys.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "liblog",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libapusys_edma",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libapusys_edma.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libion",
-                "liblog",
-                "libcutils",
-                "libapu_mdw",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libapusys_edma.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libion",
-                "liblog",
-                "libcutils",
-                "libapu_mdw",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libarmnn",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libarmnn.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libcmdl",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libarmnn.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libcmdl",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libarmnn_ndk.mtk.vndk",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libarmnn_ndk.mtk.vndk.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcmdl_ndk.mtk.vndk",
-                "libdl",
-                "libm",
-                "libc",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libarmnn_ndk.mtk.vndk.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcmdl_ndk.mtk.vndk",
-                "libdl",
-                "libm",
-                "libc",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libaudiocompensationfilter_vendor",
     owner: "realme",
     strip: {
@@ -725,45 +516,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libcapctrl",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libcapctrl.so",
-            ],
-            shared_libs: [
-                "libmtkrillog",
-                "libmtkproperty",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcapctrl.so",
-            ],
-            shared_libs: [
-                "libmtkrillog",
-                "libmtkproperty",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libcares_naptr",
     owner: "realme",
     strip: {
@@ -794,152 +546,6 @@ cc_prebuilt_library_shared {
                 "libc++",
                 "libm",
                 "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcarrierconfig",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libcarrierconfig.so",
-            ],
-            shared_libs: [
-                "libmtkcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcarrierconfig.so",
-            ],
-            shared_libs: [
-                "libmtkcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libccci_util",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libccci_util.so",
-            ],
-            shared_libs: [
-                "libc",
-                "liblog",
-                "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libccci_util.so",
-            ],
-            shared_libs: [
-                "libc",
-                "liblog",
-                "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcmdl",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libcmdl.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcmdl.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcmdl_ndk.mtk.vndk",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libcmdl_ndk.mtk.vndk.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libm",
-                "libdl",
-                "libc",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcmdl_ndk.mtk.vndk.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libm",
-                "libdl",
-                "libc",
             ],
         },
     },
@@ -2012,43 +1618,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libmtkcutils",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libmtkcutils.so",
-            ],
-            shared_libs: [
-                "libmtkrillog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libmtkcutils.so",
-            ],
-            shared_libs: [
-                "libmtkrillog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libmtkhardware_legacy",
     owner: "realme",
     strip: {
@@ -2129,119 +1698,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libmtknetutils",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libmtknetutils.so",
-            ],
-            shared_libs: [
-                "libmtkrillog",
-                "libmtkproperty",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libmtknetutils.so",
-            ],
-            shared_libs: [
-                "libmtkrillog",
-                "libmtkproperty",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmtkproperty",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libmtkproperty.so",
-            ],
-            shared_libs: [
-                "libmtkrillog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libmtkproperty.so",
-            ],
-            shared_libs: [
-                "libmtkrillog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmtkrillog",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libmtkrillog.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libmtkrillog.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libmtkshifter_vendor",
     owner: "realme",
     strip: {
@@ -2276,207 +1732,6 @@ cc_prebuilt_library_shared {
                 "libc++",
                 "libc",
                 "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmtksysutils",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libmtksysutils.so",
-            ],
-            shared_libs: [
-                "libmtkrillog",
-                "libmtkproperty",
-                "libmtkcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libmtksysutils.so",
-            ],
-            shared_libs: [
-                "libmtkrillog",
-                "libmtkproperty",
-                "libmtkcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libneuroeara",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libneuroeara.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libneuroeara.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libneuron_graph_delegate.mtk",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libneuron_graph_delegate.mtk.so",
-            ],
-            shared_libs: [
-                "libnativewindow",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libhidlbase",
-                "vendor.mediatek.hardware.apuware.utils@2.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libneuron_graph_delegate.mtk.so",
-            ],
-            shared_libs: [
-                "libnativewindow",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libhidlbase",
-                "vendor.mediatek.hardware.apuware.utils@2.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libneuropilot_hal_utils",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libneuropilot_hal_utils.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libneuropilot_hal_utils.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libnir_neon_driver_ndk.mtk.vndk",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libnir_neon_driver_ndk.mtk.vndk.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libm",
-                "libdl",
-                "libc",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libnir_neon_driver_ndk.mtk.vndk.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libm",
-                "libdl",
-                "libc",
             ],
         },
     },
@@ -2851,49 +2106,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libtflite_mtk",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libtflite_mtk.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libflatbuffers-cpp",
-                "libruy",
-                "libtextclassifier_hash",
-                "libnativewindow",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libtflite_mtk.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libflatbuffers-cpp",
-                "libruy",
-                "libtextclassifier_hash",
-                "libnativewindow",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libthha",
     owner: "realme",
     strip: {
@@ -3131,7 +2343,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libnir_neon_driver",
+    name: "vendor.mediatek.hardware.videotelephony@1.0_vendor",
+    stem: "vendor.mediatek.hardware.videotelephony@1.0",
     owner: "realme",
     strip: {
         none: true,
@@ -3139,45 +2352,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm: {
             srcs: [
-                "proprietary/vendor/lib/mt6785/libnir_neon_driver.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/mt6785/libnir_neon_driver.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "mt6785",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.apuware.utils@2.0",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/vendor.mediatek.hardware.apuware.utils@2.0.so",
+                "proprietary/vendor/lib/vendor.mediatek.hardware.videotelephony@1.0.so",
             ],
             shared_libs: [
                 "libhidlbase",
@@ -3192,7 +2367,7 @@ cc_prebuilt_library_shared {
         },
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/vendor.mediatek.hardware.apuware.utils@2.0.so",
+                "proprietary/vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so",
             ],
             shared_libs: [
                 "libhidlbase",
@@ -4874,6 +4049,80 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "APUWareUtilsServer",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/APUWareUtilsServer.so",
+            ],
+            shared_libs: [
+                "libion_mtk",
+                "libion",
+                "liblog",
+                "libhidlbase",
+                "libutils",
+                "libcutils",
+                "libdmabufheap",
+                "libgralloc_extra",
+                "libnativewindow",
+                "vendor.mediatek.hardware.apuware.utils@2.0_vendor",
+                "libhidlmemory",
+                "android.hidl.memory@1.0",
+                "android.hidl.allocator@1.0",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "APUWareXrpServer",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/APUWareXrpServer.so",
+            ],
+            shared_libs: [
+                "libion",
+                "libion_mtk",
+                "libneuron_platform",
+                "liblog",
+                "libhidlbase",
+                "libutils",
+                "libcutils",
+                "libhidlmemory",
+                "libfmq",
+                "vendor.mediatek.hardware.apuware.xrp@1.0_vendor",
+                "android.hidl.allocator@1.0",
+                "android.hidl.memory@1.0",
+                "libdmabufheap",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
     prefer: true,
     soc_specific: true,
 }
@@ -22095,6 +21344,90 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libapu_mdw",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libapu_mdw.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "libdmabufheap",
+                "liblog",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libapusys",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libapusys.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "liblog",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libapusys_edma",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libapusys_edma.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "libion",
+                "liblog",
+                "libcutils",
+                "libapu_mdw",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libarcsoft_distortion_correction",
     owner: "realme",
     strip: {
@@ -22501,6 +21834,59 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libarmnn",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libarmnn.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libcmdl",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libarmnn_ndk.mtk.vndk",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libarmnn_ndk.mtk.vndk.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcmdl_ndk.mtk.vndk",
+                "libdl",
+                "libm",
+                "libc",
             ],
         },
     },
@@ -24020,6 +23406,82 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libcapctrl",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcapctrl.so",
+            ],
+            shared_libs: [
+                "libmtkrillog",
+                "libmtkproperty",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcarrierconfig",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcarrierconfig.so",
+            ],
+            shared_libs: [
+                "libmtkcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libccci_util",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libccci_util.so",
+            ],
+            shared_libs: [
+                "libc",
+                "liblog",
+                "libc++",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libcharon-ss",
     owner: "realme",
     strip: {
@@ -24078,6 +23540,55 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcmdl",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcmdl.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcmdl_ndk.mtk.vndk",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcmdl_ndk.mtk.vndk.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libm",
+                "libdl",
+                "libc",
             ],
         },
     },
@@ -28666,6 +28177,31 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libmtkcutils",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libmtkcutils.so",
+            ],
+            shared_libs: [
+                "libmtkrillog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libmtkisp_metadata",
     owner: "realme",
     strip: {
@@ -28764,6 +28300,82 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libmtknetutils",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libmtknetutils.so",
+            ],
+            shared_libs: [
+                "libmtkrillog",
+                "libmtkproperty",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmtkproperty",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libmtkproperty.so",
+            ],
+            shared_libs: [
+                "libmtkrillog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmtkrillog",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libmtkrillog.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libmtkrilutils",
     owner: "realme",
     strip: {
@@ -28782,6 +28394,33 @@ cc_prebuilt_library_shared {
                 "libmtkconfigutils",
                 "libmtkutils",
                 "libcrypto",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmtksysutils",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libmtksysutils.so",
+            ],
+            shared_libs: [
+                "libmtkrillog",
+                "libmtkproperty",
+                "libmtkcutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -28847,6 +28486,34 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libneuroeara",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libneuroeara.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libneuron_adapter",
     owner: "realme",
     strip: {
@@ -28865,6 +28532,37 @@ cc_prebuilt_library_shared {
                 "libion_mtk",
                 "libcutils",
                 "libneuron_platform",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libneuron_graph_delegate.mtk_vendor",
+    stem: "libneuron_graph_delegate.mtk",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libneuron_graph_delegate.mtk.so",
+            ],
+            shared_libs: [
+                "libnativewindow",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libhidlbase",
+                "vendor.mediatek.hardware.apuware.utils@2.0_vendor",
                 "libc++",
                 "libc",
                 "libm",
@@ -28899,6 +28597,54 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libneuropilot_hal_utils",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libneuropilot_hal_utils.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libnir_neon_driver_ndk.mtk.vndk",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libnir_neon_driver_ndk.mtk.vndk.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libm",
+                "libdl",
+                "libc",
             ],
         },
     },
@@ -29734,6 +29480,35 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libtflite_mtk_vendor",
+    stem: "libtflite_mtk",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libtflite_mtk.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libflatbuffers-cpp",
+                "libruy",
+                "libtextclassifier_hash",
+                "libnativewindow",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libtlcWidevineModularDrm",
     owner: "realme",
     strip: {
@@ -30345,6 +30120,32 @@ cc_prebuilt_library_shared {
                 "libvpu",
                 "libm",
                 "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "mt6785",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libnir_neon_driver",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/mt6785/libnir_neon_driver.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
             ],
         },
     },
@@ -31374,7 +31175,37 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.apuware.xrp@1.0",
+    name: "vendor.mediatek.hardware.apuware.utils@2.0_vendor",
+    stem: "vendor.mediatek.hardware.apuware.utils@2.0",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.mediatek.hardware.apuware.utils@2.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.apuware.xrp@1.0_vendor",
+    stem: "vendor.mediatek.hardware.apuware.xrp@1.0",
     owner: "realme",
     strip: {
         none: true,
@@ -33010,35 +32841,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.videotelephony@1.0_vendor",
-    stem: "vendor.mediatek.hardware.videotelephony@1.0",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.trustonic.tee.tui@1.0",
     owner: "realme",
     strip: {
@@ -33167,7 +32969,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libcomutils",
+    name: "libapuwareapusys.mtk",
     owner: "realme",
     strip: {
         none: true,
@@ -33175,16 +32977,19 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/system_ext/lib64/libcomutils.so",
+                "proprietary/system_ext/lib64/libapuwareapusys.mtk.so",
             ],
             shared_libs: [
-                "libcutils",
-                "libstagefright_foundation",
-                "libutils",
-                "libstagefright",
-                "libmedia",
                 "liblog",
+                "libion",
+                "libutils",
+                "libcutils",
                 "libhidlbase",
+                "libfmq",
+                "vendor.mediatek.hardware.apuware.apusys@1.0",
+                "android.hidl.allocator@1.0",
+                "android.hidl.memory@1.0",
+                "libhidlmemory",
                 "libc++",
                 "libc",
                 "libm",
@@ -33198,7 +33003,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libimsma",
+    name: "libapuwareapusys_v2.mtk",
     owner: "realme",
     strip: {
         none: true,
@@ -33206,50 +33011,21 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/system_ext/lib64/libimsma.so",
-            ],
-            shared_libs: [
-                "libbinder",
-                "libcutils",
-                "libgui",
-                "libmedia",
-                "libstagefright",
-                "libstagefright_foundation",
-                "libui",
-                "libutils",
-                "libsink-mtk",
-                "libsource",
-                "libvcodec_cap",
-                "libimsma_rtp",
-                "libcomutils",
-                "liblog",
-                "libsignal",
-                "libnetd_client",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libimsma_adapt",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/libimsma_adapt.so",
+                "proprietary/system_ext/lib64/libapuwareapusys_v2.mtk.so",
             ],
             shared_libs: [
                 "liblog",
+                "libion",
+                "libutils",
+                "libcutils",
+                "libhidlbase",
+                "libfmq",
+                "vendor.mediatek.hardware.apuware.apusys@2.0",
+                "vendor.mediatek.hardware.apuware.apusys@2.1",
+                "android.hidl.allocator@1.0",
+                "android.hidl.memory@1.0",
+                "libhidlmemory",
+                "libdmabufheap",
                 "libc++",
                 "libc",
                 "libm",
@@ -33263,7 +33039,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libimsma_rtp",
+    name: "libapuwarehmp.mtk",
     owner: "realme",
     strip: {
         none: true,
@@ -33271,20 +33047,18 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/system_ext/lib64/libimsma_rtp.so",
+                "proprietary/system_ext/lib64/libapuwarehmp.mtk.so",
             ],
             shared_libs: [
-                "libbinder",
-                "libmedia",
-                "libutils",
-                "libcutils",
-                "libstagefright",
-                "libstagefright_foundation",
-                "libimsma_socketwrapper",
-                "libvcodec_cap",
-                "libimsma_adapt",
                 "liblog",
-                "libsignal",
+                "libion",
+                "libutils",
+                "libcutils",
+                "libhidlbase",
+                "vendor.mediatek.hardware.apuware.hmp@1.0",
+                "android.hidl.allocator@1.0",
+                "android.hidl.memory@1.0",
+                "libhidlmemory",
                 "libc++",
                 "libc",
                 "libm",
@@ -33298,7 +33072,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libimsma_socketwrapper",
+    name: "libapuwareutils.mtk",
     owner: "realme",
     strip: {
         none: true,
@@ -33306,17 +33080,15 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/system_ext/lib64/libimsma_socketwrapper.so",
+                "proprietary/system_ext/lib64/libapuwareutils.mtk.so",
             ],
             shared_libs: [
-                "libbinder",
-                "libmedia",
-                "libutils",
-                "libcutils",
-                "libstagefright",
-                "libstagefright_foundation",
-                "libnetd_client",
                 "liblog",
+                "libion",
+                "libutils",
+                "libcutils",
+                "libhidlbase",
+                "vendor.mediatek.hardware.apuware.utils@1.0",
                 "libc++",
                 "libc",
                 "libm",
@@ -33330,7 +33102,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libmtk_vt_service",
+    name: "libapuwareutils_v2.mtk",
     owner: "realme",
     strip: {
         none: true,
@@ -33338,237 +33110,167 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/system_ext/lib64/libmtk_vt_service.so",
+                "proprietary/system_ext/lib64/libapuwareutils_v2.mtk.so",
             ],
             shared_libs: [
-                "libandroid_runtime",
-                "libbinder",
+                "liblog",
+                "libion",
                 "libutils",
                 "libcutils",
-                "libnativehelper",
-                "libui",
-                "libgui",
-                "libmedia",
+                "libhidlbase",
+                "libnativewindow",
+                "vendor.mediatek.hardware.apuware.utils@2.0",
+                "android.hidl.memory@1.0",
+                "libhidlmemory",
+                "android.hidl.allocator@1.0",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libapuwarexrp.mtk",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libapuwarexrp.mtk.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libion",
+                "libutils",
+                "libcutils",
+                "libhidlbase",
+                "libfmq",
+                "vendor.mediatek.hardware.apuware.xrp@1.0",
+                "android.hidl.allocator@1.0",
+                "android.hidl.memory@1.0",
+                "libhidlmemory",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libapuwarexrp_v2.mtk",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libapuwarexrp_v2.mtk.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libion",
+                "libutils",
+                "libcutils",
+                "libhidlbase",
+                "libfmq",
+                "vendor.mediatek.hardware.apuware.xrp@2.0",
+                "android.hidl.allocator@1.0",
+                "android.hidl.memory@1.0",
+                "libhidlmemory",
+                "libdmabufheap",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libarmnn_ndk.mtk",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libarmnn_ndk.mtk.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcmdl_ndk.mtk",
+                "libdl",
+                "libm",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcmdl_ndk.mtk",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libcmdl_ndk.mtk.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmvpu_cic_ci_compiler.mtk",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libmvpu_cic_ci_compiler.mtk.so",
+            ],
+            shared_libs: [
                 "libbase",
-                "libfmq",
-                "libbinder_ndk",
-                "vendor.mediatek.hardware.videotelephony@1.0",
-                "vendor.mediatek.hardware.videotelephony-V1-ndk",
-                "libhidlbase",
-                "libhidltransport",
-                "libimsma",
-                "libsource",
-                "libimsma_rtp",
-                "libvt_avsync",
-                "libstagefright_foundation",
-                "libvcodec_cap",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmtk_vt_wrapper",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/libmtk_vt_wrapper.so",
-            ],
-            shared_libs: [
-                "libandroid_runtime",
-                "libbinder",
-                "libutils",
-                "libcutils",
-                "libnativehelper",
-                "libfmq",
-                "libbinder_ndk",
-                "vendor.mediatek.hardware.videotelephony@1.0",
-                "vendor.mediatek.hardware.videotelephony-V1-ndk",
-                "libhidlbase",
-                "libhidltransport",
-                "libui",
-                "libgui",
-                "libmedia",
-                "libvcodec_cap",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libsignal",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/libsignal.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "libstagefright_foundation",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libsink-mtk",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/libsink-mtk.so",
-            ],
-            shared_libs: [
-                "libbinder",
-                "libcutils",
-                "libgui",
-                "libmedia",
-                "libstagefright",
-                "libstagefright_foundation",
-                "libui",
-                "libutils",
-                "libcomutils",
-                "libvcodec_cap",
-                "libvt_avsync",
-                "liblog",
-                "libmedia_omx",
-                "libaudioclient",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libsource",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/libsource.so",
-            ],
-            shared_libs: [
-                "libbinder",
-                "libcutils",
-                "libgui",
-                "libmedia",
-                "libstagefright",
-                "libstagefright_foundation",
-                "libmedia_omx",
-                "libui",
-                "libutils",
-                "libcamera_client",
-                "libcomutils",
-                "libvcodec_cap",
-                "liblog",
-                "libsignal",
-                "libhardware",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libvcodec_cap",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/libvcodec_cap.so",
-            ],
-            shared_libs: [
-                "libui",
-                "libcutils",
-                "libutils",
-                "libbinder",
-                "libexpat",
-                "liblog",
-                "libvcodec_capenc",
-                "libstagefright_omx_utils",
-                "libstagefright_foundation",
-                "libion",
-                "android.hardware.graphics.bufferqueue@2.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libvcodec_capenc",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/libvcodec_capenc.so",
-            ],
-            shared_libs: [
                 "liblog",
                 "libion",
+                "libcutils",
+                "libcrypto",
+                "libmvpu_clc_mvpu_elf.mtk",
                 "libc++",
                 "libc",
                 "libm",
@@ -33582,7 +33284,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libvt_avsync",
+    name: "libmvpu_clc_mvpu_debuginfo.mtk",
     owner: "realme",
     strip: {
         none: true,
@@ -33590,13 +33292,346 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/system_ext/lib64/libvt_avsync.so",
+                "proprietary/system_ext/lib64/libmvpu_clc_mvpu_debuginfo.mtk.so",
             ],
             shared_libs: [
-                "libbinder",
+                "libmvpu_clc_mvpu_elf.mtk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmvpu_clc_mvpu_elf.mtk",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libmvpu_clc_mvpu_elf.mtk.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmvpu_clc_mvpu_utility.mtk",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libmvpu_clc_mvpu_utility.mtk.so",
+            ],
+            shared_libs: [
+                "libz",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmvpu_config.mtk",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libmvpu_config.mtk.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmvpu_engine.mtk",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libmvpu_engine.mtk.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "libion",
+                "liblog",
+                "libcutils",
+                "libapuwareapusys_v2.mtk",
+                "libmvpu_config.mtk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmvpu_engine_pub.mtk",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libmvpu_engine_pub.mtk.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "liblog",
+                "libcutils",
+                "libapuwareapusys_v2.mtk",
+                "libmvpu_config.mtk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmvpu_pattern.mtk",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libmvpu_pattern.mtk.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "liblog",
+                "libcutils",
+                "libmvpu_config.mtk",
+                "libmvpu_engine.mtk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmvpu_pattern_pub.mtk",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libmvpu_pattern_pub.mtk.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "liblog",
+                "libcutils",
+                "libmvpu_config.mtk",
+                "libmvpu_engine_pub.mtk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmvpu_runtime.mtk",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libmvpu_runtime.mtk.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "liblog",
+                "libion",
+                "libcutils",
+                "libcrypto",
+                "libmvpu_cic_ci_compiler.mtk",
+                "libmvpu_pattern.mtk",
+                "libmvpu_engine.mtk",
+                "libmvpu_config.mtk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmvpu_runtime_pub.mtk",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libmvpu_runtime_pub.mtk.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "liblog",
+                "libion",
+                "libcutils",
+                "libcrypto",
+                "libmvpu_cic_ci_compiler.mtk",
+                "libmvpu_pattern_pub.mtk",
+                "libmvpu_engine_pub.mtk",
+                "libmvpu_config.mtk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmvpuop_mtk_cv.mtk",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libmvpuop_mtk_cv.mtk.so",
+            ],
+            shared_libs: [
+                "libdl",
+                "liblog",
+                "libm",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmvpuop_mtk_nn.mtk",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libmvpuop_mtk_nn.mtk.so",
+            ],
+            shared_libs: [
+                "libdl",
+                "liblog",
+                "libm",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libneuron_graph_delegate.mtk",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libneuron_graph_delegate.mtk.so",
+            ],
+            shared_libs: [
+                "libnativewindow",
+                "liblog",
                 "libutils",
                 "libcutils",
-                "liblog",
+                "libhidlbase",
+                "vendor.mediatek.hardware.apuware.utils@2.0",
                 "libc++",
                 "libc",
                 "libm",
@@ -33610,7 +33645,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.videotelephony-V1-ndk",
+    name: "libneuronusdk_adapter.mtk",
     owner: "realme",
     strip: {
         none: true,
@@ -33618,12 +33653,119 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/system_ext/lib64/vendor.mediatek.hardware.videotelephony-V1-ndk.so",
+                "proprietary/system_ext/lib64/libneuronusdk_adapter.mtk.so",
             ],
             shared_libs: [
-                "libbinder_ndk",
-                "android.hardware.common-V2-ndk",
-                "android.hardware.common.fmq-V1-ndk",
+                "libnativewindow",
+                "libm",
+                "libdl",
+                "libz",
+                "liblog",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libnir_neon_driver_ndk.mtk",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libnir_neon_driver_ndk.mtk.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libtflite_mtk.mtk",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libtflite_mtk.mtk.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libflatbuffers-cpp",
+                "libruy",
+                "libtextclassifier_hash",
+                "libnativewindow",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libtflite_mtk",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libtflite_mtk.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libflatbuffers-cpp",
+                "libruy",
+                "libtextclassifier_hash",
+                "libnativewindow",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.apuware.apusys@1.0",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/vendor.mediatek.hardware.apuware.apusys@1.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -33637,7 +33779,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.videotelephony@1.0",
+    name: "vendor.mediatek.hardware.apuware.apusys@2.0",
     owner: "realme",
     strip: {
         none: true,
@@ -33645,7 +33787,176 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so",
+                "proprietary/system_ext/lib64/vendor.mediatek.hardware.apuware.apusys@2.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.apuware.apusys@2.1",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/vendor.mediatek.hardware.apuware.apusys@2.1.so",
+            ],
+            shared_libs: [
+                "vendor.mediatek.hardware.apuware.apusys@2.0",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.apuware.hmp@1.0",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/vendor.mediatek.hardware.apuware.hmp@1.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.apuware.utils@1.0",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/vendor.mediatek.hardware.apuware.utils@1.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.apuware.utils@2.0",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/vendor.mediatek.hardware.apuware.utils@2.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.apuware.xrp@1.0",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/vendor.mediatek.hardware.apuware.xrp@1.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.apuware.xrp@2.0",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/vendor.mediatek.hardware.apuware.xrp@2.0.so",
             ],
             shared_libs: [
                 "libhidlbase",
@@ -36294,11 +36605,12 @@ cc_prebuilt_binary {
     name: "gsm0710muxd",
     owner: "realme",
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
                 "proprietary/vendor/bin/gsm0710muxd",
             ],
             shared_libs: [
+                "libcutils",
                 "libmtkcutils",
                 "libmtkrillog",
                 "libmtkproperty",
@@ -36310,7 +36622,7 @@ cc_prebuilt_binary {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
     strip: {
         none: true,
     },
@@ -38021,35 +38333,6 @@ cc_prebuilt_binary {
     soc_specific: true,
 }
 
-cc_prebuilt_binary {
-    name: "vtservice",
-    owner: "realme",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/bin/vtservice",
-            ],
-            shared_libs: [
-                "libbinder",
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libmtk_vt_service",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    system_ext_specific: true,
-}
-
 sh_binary {
     name: "engineer_vendor_shell",
     owner: "realme",
@@ -38309,13 +38592,6 @@ install_symlink {
     soc_specific: true,
     installed_location: "lib/libmtk_drvb.so",
     symlink_target: "/vendor/lib/mt6785/libmtk_drvb.so",
-}
-
-install_symlink {
-    name: "vendor_lib_libnir_neon_driver_so",
-    soc_specific: true,
-    installed_location: "lib/libnir_neon_driver.so",
-    symlink_target: "/vendor/lib/mt6785/libnir_neon_driver.so",
 }
 
 install_symlink {
