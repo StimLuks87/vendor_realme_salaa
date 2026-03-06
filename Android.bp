@@ -35957,13 +35957,6 @@ prebuilt_etc_xml {
     device_specific: true,
 }
 
-sh_binary {
-    name: "move_widevine_data",
-    owner: "realme",
-    src: "proprietary/system/bin/move_widevine_data.sh",
-    filename: "move_widevine_data.sh",
-}
-
 cc_prebuilt_binary {
     name: "AgentTest",
     owner: "realme",

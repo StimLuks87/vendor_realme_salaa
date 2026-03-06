@@ -1888,7 +1888,6 @@ PRODUCT_PACKAGES += \
     manifest_oplus_mtkmodemaci.xml \
     manifest_oplus_performance.xml \
     manifest_oplus_touch.xml \
-    move_widevine_data \
     AgentTest \
     atci_service \
     bip \
