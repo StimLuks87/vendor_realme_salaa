@@ -453,7 +453,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/salaa/proprietary/vendor/etc/init/camerahalserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camerahalserver.rc \
     vendor/realme/salaa/proprietary/vendor/etc/init/chipinfo_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/chipinfo_init.rc \
     vendor/realme/salaa/proprietary/vendor/etc/init/dmc_core.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dmc_core.rc \
-    vendor/realme/salaa/proprietary/vendor/etc/init/em_hidl_user.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/em_hidl_user.rc \
     vendor/realme/salaa/proprietary/vendor/etc/init/fuelgauged_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_init.rc \
     vendor/realme/salaa/proprietary/vendor/etc/init/fuelgauged_nvram_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_nvram_init.rc \
     vendor/realme/salaa/proprietary/vendor/etc/init/gsm0710muxd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/gsm0710muxd.rc \
@@ -539,13 +538,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/salaa/proprietary/vendor/firmware/BT_FW.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/BT_FW.cfg \
     vendor/realme/salaa/proprietary/vendor/firmware/WIFI_RAM_CODE_soc1_0_2a_1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/WIFI_RAM_CODE_soc1_0_2a_1.bin \
     vendor/realme/salaa/proprietary/vendor/firmware/WMT_SOC.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/WMT_SOC.cfg \
-    vendor/realme/salaa/proprietary/vendor/firmware/catcher_filter_1_ulwctg_n.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/catcher_filter_1_ulwctg_n.bin \
-    vendor/realme/salaa/proprietary/vendor/firmware/customfilter/catcher_filter_1_ulwctg_n_FullLog.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/customfilter/catcher_filter_1_ulwctg_n_FullLog.bin \
-    vendor/realme/salaa/proprietary/vendor/firmware/customfilter/catcher_filter_1_ulwctg_n_PLS_PS_ONLY.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/customfilter/catcher_filter_1_ulwctg_n_PLS_PS_ONLY.bin \
-    vendor/realme/salaa/proprietary/vendor/firmware/customfilter/catcher_filter_1_ulwctg_n_SlimLog_DspAllOff.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/customfilter/catcher_filter_1_ulwctg_n_SlimLog_DspAllOff.bin \
-    vendor/realme/salaa/proprietary/vendor/firmware/customfilter/catcher_filter_1_ulwctg_n__Default.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/customfilter/catcher_filter_1_ulwctg_n__Default.bin \
-    vendor/realme/salaa/proprietary/vendor/firmware/customfilter/catcher_filter_1_ulwctg_n_meta.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/customfilter/catcher_filter_1_ulwctg_n_meta.bin \
-    vendor/realme/salaa/proprietary/vendor/firmware/em_filter_1_ulwctg_n.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/em_filter_1_ulwctg_n.bin \
     vendor/realme/salaa/proprietary/vendor/firmware/fm_cust.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/fm_cust.cfg \
     vendor/realme/salaa/proprietary/vendor/firmware/gt1151_default_firmware2.img:$(TARGET_COPY_OUT_VENDOR)/firmware/gt1151_default_firmware2.img \
     vendor/realme/salaa/proprietary/vendor/firmware/lib3a.ccu:$(TARGET_COPY_OUT_VENDOR)/firmware/lib3a.ccu \
@@ -615,13 +607,6 @@ PRODUCT_PACKAGES += \
     libJpgEncPipe \
     libMcClient \
     libTEECommon \
-    libaudiocompensationfilter_vendor \
-    libaudioprimarydevicehalifclient \
-    libbluetooth_mtk \
-    libbluetooth_mtk_pure \
-    libbluetooth_relayer \
-    libbluetoothem_mtk \
-    libbt-vendor \
     libbwc \
     libcares_naptr \
     libconnfem \
@@ -681,6 +666,7 @@ PRODUCT_PACKAGES += \
     libalsautils-v31 \
     libaudio_engineer_test \
     libaudio_param_parser-vnd \
+    libaudiocompensationfilter_vendor \
     libaudiocompensationfilterc \
     libaudiocomponentengine_vendor \
     libaudiocomponentenginec \
@@ -688,6 +674,7 @@ PRODUCT_PACKAGES += \
     libaudiodcrflt_vendor \
     libaudiofmtconv \
     libaudioloudc \
+    libaudioprimarydevicehalifclient \
     libaudiotoolkit_vendor \
     libaurisysdemo \
     libbessound_hd_mtk_vendor \
@@ -713,6 +700,7 @@ PRODUCT_PACKAGES += \
     libpowerhalwrap_vendor \
     librcs_interface \
     librcs_volte_core \
+    librt_extamp_intf \
     libspeech_enh_lib \
     libspeechparser_vendor \
     libthermalalgo \
@@ -1437,6 +1425,10 @@ PRODUCT_PACKAGES += \
     libasn1c_core \
     libasn1c_mapi \
     libasn1c_mdmi \
+    libbluetooth_mtk \
+    libbluetooth_mtk_pure \
+    libbluetoothem_mtk \
+    libbt-vendor \
     libcam.chdr \
     libcam.feature_utils \
     libcam.hal3a.cctsvr \
@@ -1648,7 +1640,6 @@ PRODUCT_PACKAGES += \
     librgbwlightsensor \
     librilfusion \
     librpc \
-    librt_extamp_intf \
     libscltm \
     libsensor_custom \
     libsimaka \
@@ -1725,10 +1716,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.dmc@1.0 \
     vendor.mediatek.hardware.dmc@1.1 \
     vendor.mediatek.hardware.dmc@1.2 \
-    vendor.mediatek.hardware.engineermode@1.0 \
-    vendor.mediatek.hardware.engineermode@1.1 \
-    vendor.mediatek.hardware.engineermode@1.2 \
-    vendor.mediatek.hardware.engineermode@1.3 \
     vendor.mediatek.hardware.keymaster_attestation@1.0 \
     vendor.mediatek.hardware.keymaster_attestation@1.1 \
     vendor.mediatek.hardware.lbs@1.0 \
@@ -1766,7 +1753,6 @@ PRODUCT_PACKAGES += \
     vendor.trustonic.tee.tui@1.0 \
     vendor.trustonic.tee@1.0 \
     vendor.trustonic.tee@1.1 \
-    libem_support_jni \
     libapuwareapusys.mtk \
     libapuwareapusys_v2.mtk \
     libapuwarehmp.mtk \
@@ -1872,7 +1858,6 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.radio@1.0 \
     vendor.oplus.hardware.touch@1.0 \
     HotwordEnrollmentOKGoogleCORTEXM4 \
-    EngineerMode \
     com.android.hotwordenrollment.common.util \
     vendor.oplus.hardware.mtkmodemaci-V1.0-java \
     vendor.oplus.hardware.performance-V1.0-java \
@@ -1899,7 +1884,6 @@ PRODUCT_PACKAGES += \
     doeapp-memtester \
     doeapp-sat \
     dtc_vendor \
-    em_hidl \
     epdg_wod \
     fuelgauged \
     fuelgauged_nvram \

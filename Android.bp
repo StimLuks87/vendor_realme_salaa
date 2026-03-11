@@ -176,305 +176,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libaudiocompensationfilter_vendor",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libaudiocompensationfilter_vendor.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libnvram",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libaudiocompensationfilter_vendor.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libnvram",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libaudioprimarydevicehalifclient",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libaudioprimarydevicehalifclient.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libbase",
-                "libhwbinder",
-                "libhidlbase",
-                "android.hardware.audio@7.0",
-                "android.hardware.audio.common@7.0",
-                "android.hardware.audio.common@7.0-util",
-                "libmedia_helper",
-                "libbinder",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libaudioprimarydevicehalifclient.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libbase",
-                "libhwbinder",
-                "libhidlbase",
-                "android.hardware.audio@7.0",
-                "android.hardware.audio.common@7.0",
-                "android.hardware.audio.common@7.0-util",
-                "libmedia_helper",
-                "libbinder",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libbluetooth_mtk",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libbluetooth_mtk.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libnvram",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libbluetooth_mtk.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libnvram",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libbluetooth_mtk_pure",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libbluetooth_mtk_pure.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libnvram",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libbluetooth_mtk_pure.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libnvram",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libbluetooth_relayer",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libbluetooth_relayer.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libbluetoothem_mtk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libbluetooth_relayer.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libbluetoothem_mtk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libbluetoothem_mtk",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libbluetoothem_mtk.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libbluetoothem_mtk.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libbt-vendor",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libbt-vendor.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libbluetooth_mtk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libbt-vendor.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libbluetooth_mtk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libbwc",
     owner: "realme",
     strip: {
@@ -2741,6 +2442,34 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libaudiocompensationfilter_vendor",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libaudiocompensationfilter_vendor.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libnvram",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libaudiocompensationfilterc",
     owner: "realme",
     strip: {
@@ -2932,6 +2661,41 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libutils",
                 "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libaudioprimarydevicehalifclient",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libaudioprimarydevicehalifclient.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libbase",
+                "libhwbinder",
+                "libhidlbase",
+                "android.hardware.audio@7.0",
+                "android.hardware.audio.common@7.0",
+                "android.hardware.audio.common@7.0-util",
+                "libmedia_helper",
+                "libbinder",
                 "libc++",
                 "libc",
                 "libm",
@@ -3556,6 +3320,39 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libhardware",
                 "libhardware_legacy",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "librt_extamp_intf",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/librt_extamp_intf.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "libtinyalsa",
+                "libtinyxml2",
+                "liblog",
+                "libnvram",
+                "libcrypto",
+                "libssl",
+                "libfile_op",
                 "libc++",
                 "libc",
                 "libm",
@@ -21948,6 +21745,111 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libbluetooth_mtk",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libbluetooth_mtk.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libnvram",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libbluetooth_mtk_pure",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libbluetooth_mtk_pure.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libnvram",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libbluetoothem_mtk",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libbluetoothem_mtk.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libbt-vendor",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libbt-vendor.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libbluetooth_mtk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libcam.chdr",
     owner: "realme",
     strip: {
@@ -29021,39 +28923,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "librt_extamp_intf",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/librt_extamp_intf.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "libtinyalsa",
-                "libtinyxml2-v34",
-                "liblog",
-                "libnvram",
-                "libcrypto",
-                "libssl",
-                "libfile_op",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libscltm",
     owner: "realme",
     strip: {
@@ -31414,124 +31283,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.engineermode@1.0",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.mediatek.hardware.engineermode@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.engineermode@1.1",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.mediatek.hardware.engineermode@1.1.so",
-            ],
-            shared_libs: [
-                "vendor.mediatek.hardware.engineermode@1.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.engineermode@1.2",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.mediatek.hardware.engineermode@1.2.so",
-            ],
-            shared_libs: [
-                "vendor.mediatek.hardware.engineermode@1.0",
-                "vendor.mediatek.hardware.engineermode@1.1",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.engineermode@1.3",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.mediatek.hardware.engineermode@1.3.so",
-            ],
-            shared_libs: [
-                "vendor.mediatek.hardware.engineermode@1.0",
-                "vendor.mediatek.hardware.engineermode@1.1",
-                "vendor.mediatek.hardware.engineermode@1.2",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.mediatek.hardware.keymaster_attestation@1.0",
     owner: "realme",
     strip: {
@@ -32696,49 +32447,6 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     prefer: true,
     soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libem_support_jni",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/system_ext/lib/libem_support_jni.so",
-            ],
-            shared_libs: [
-                "libandroid_runtime",
-                "liblog",
-                "libutils",
-                "libgui",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/libem_support_jni.so",
-            ],
-            shared_libs: [
-                "libandroid_runtime",
-                "liblog",
-                "libutils",
-                "libgui",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    system_ext_specific: true,
 }
 
 cc_prebuilt_library_shared {
@@ -35811,17 +35519,6 @@ android_app_import {
     product_specific: true,
 }
 
-android_app_import {
-    name: "EngineerMode",
-    owner: "realme",
-    apk: "proprietary/system_ext/app/EngineerMode/EngineerMode.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    system_ext_specific: true,
-}
-
 dex_import {
     name: "com.android.hotwordenrollment.common.util",
     owner: "realme",
@@ -36235,44 +35932,6 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/dtc_vendor",
             ],
             shared_libs: [
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "em_hidl",
-    owner: "realme",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/em_hidl",
-            ],
-            shared_libs: [
-                "liblog",
-                "libbase",
-                "libhardware",
-                "libbinder",
-                "libhidlbase",
-                "libhidltransport",
-                "libutils",
-                "libcutils",
-                "vendor.mediatek.hardware.engineermode@1.0",
-                "vendor.mediatek.hardware.engineermode@1.1",
-                "vendor.mediatek.hardware.engineermode@1.2",
-                "vendor.mediatek.hardware.engineermode@1.3",
-                "libbluetooth_relayer",
-                "libbluetoothem_mtk",
-                "libc++",
                 "libc",
                 "libm",
                 "libdl",
