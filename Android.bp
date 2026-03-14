@@ -1764,49 +1764,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libteeservice_client.trustonic",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libteeservice_client.trustonic.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libbinder",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libteeservice_client.trustonic.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libbinder",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libthha",
     owner: "realme",
     strip: {
@@ -4513,6 +4470,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/hw/hwcomposer.mt6785.so",
             ],
             shared_libs: [
+                "libprocessgroup_shim",
                 "libutils",
                 "libcutils",
                 "liblog",
@@ -20963,7 +20921,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libaalservice.so",
             ],
             shared_libs: [
-                "android.hardware.sensors@1.0-convert-shared",
                 "libutils",
                 "libcutils",
                 "liblog",
@@ -20973,7 +20930,7 @@ cc_prebuilt_library_shared {
                 "libgralloc_extra",
                 "android.frameworks.sensorservice@1.0",
                 "android.hardware.sensors@1.0",
-                "libsensorndkbridge",
+                "android.hardware.sensors@1.0-convert-shared",
                 "libdrm",
                 "libc++",
                 "libc",
@@ -22426,7 +22383,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libcam.utils.sensorprovider.so",
             ],
             shared_libs: [
-                "android.hardware.sensors@1.0-convert-shared",
                 "liblog",
                 "libmtkcam_ulog",
                 "libutils",
@@ -22436,7 +22392,7 @@ cc_prebuilt_library_shared {
                 "android.hardware.sensors@1.0",
                 "libhidlbase",
                 "libhidltransport",
-                "libsensorndkbridge",
+                "android.hardware.sensors@1.0-convert-shared",
                 "libhardware",
                 "libmtkcam_modulehelper",
                 "libcamalgo.gyro",
@@ -28824,7 +28780,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/librgbwlightsensor.so",
             ],
             shared_libs: [
-                "android.hardware.sensors@1.0-convert-shared",
                 "libcutils",
                 "libutils",
                 "libhardware",
@@ -28832,7 +28787,7 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "android.frameworks.sensorservice@1.0",
                 "android.hardware.sensors@1.0",
-                "libsensorndkbridge",
+                "android.hardware.sensors@1.0-convert-shared",
                 "libc++",
                 "libc",
                 "libm",
@@ -32450,6 +32405,49 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libteeservice_client.trustonic",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/system_ext/lib/libteeservice_client.trustonic.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libbinder",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libteeservice_client.trustonic.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libbinder",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libapuwareapusys.mtk",
     owner: "realme",
     strip: {
@@ -35573,15 +35571,6 @@ prebuilt_etc_xml {
     soc_specific: true,
 }
 
-prebuilt_etc_xml {
-    name: "manifest_hwcomposer.xml",
-    owner: "realme",
-    src: "proprietary/vendor/etc/vintf/manifest/manifest_hwcomposer.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
 prebuilt_etc {
     name: "gauge_authenticate",
     owner: "realme",
@@ -36842,7 +36831,6 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/mnld",
             ],
             shared_libs: [
-                "android.hardware.sensors@1.0-convert-shared",
                 "libmnl",
                 "libcurl",
                 "libcutils",
@@ -36859,7 +36847,7 @@ cc_prebuilt_binary {
                 "android.hardware.sensors@1.0",
                 "libhidlbase",
                 "libhidltransport",
-                "libsensorndkbridge",
+                "android.hardware.sensors@1.0-convert-shared",
                 "libc++",
                 "libc",
                 "libm",

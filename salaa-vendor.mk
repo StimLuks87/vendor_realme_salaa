@@ -647,7 +647,6 @@ PRODUCT_PACKAGES += \
     libssl-md \
     libssl-ss \
     libsysenv \
-    libteeservice_client.trustonic \
     libthha \
     libvcodec_oal \
     libverno \
@@ -1753,6 +1752,7 @@ PRODUCT_PACKAGES += \
     vendor.trustonic.tee.tui@1.0 \
     vendor.trustonic.tee@1.0 \
     vendor.trustonic.tee@1.1 \
+    libteeservice_client.trustonic \
     libapuwareapusys.mtk \
     libapuwareapusys_v2.mtk \
     libapuwarehmp.mtk \
@@ -1864,7 +1864,6 @@ PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3-service-mtk-dsp-gpu.xml \
     lbs_hidl_service@1.0.xml \
     manifest_android.hardware.drm@1.4-service.widevine.xml \
-    manifest_hwcomposer.xml \
     gauge_authenticate \
     manifest_oplusSensor.xml \
     manifest_oplus_charger.xml \
