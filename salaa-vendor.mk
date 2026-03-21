@@ -258,6 +258,8 @@ PRODUCT_COPY_FILES += \
     vendor/realme/salaa/proprietary/vendor/etc/apdb/APDB_MT6785_S01__W2214:$(TARGET_COPY_OUT_VENDOR)/etc/apdb/APDB_MT6785_S01__W2214 \
     vendor/realme/salaa/proprietary/vendor/etc/apdb/APDB_MT6785_S01__W2214_ENUM:$(TARGET_COPY_OUT_VENDOR)/etc/apdb/APDB_MT6785_S01__W2214_ENUM \
     vendor/realme/salaa/proprietary/vendor/etc/armnn_app.config:$(TARGET_COPY_OUT_VENDOR)/etc/armnn_app.config \
+    vendor/realme/salaa/proprietary/vendor/etc/asd/class.tflite:$(TARGET_COPY_OUT_VENDOR)/etc/asd/class.tflite \
+    vendor/realme/salaa/proprietary/vendor/etc/asd/detect.tflite:$(TARGET_COPY_OUT_VENDOR)/etc/asd/detect.tflite \
     vendor/realme/salaa/proprietary/vendor/etc/aurisys_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/aurisys_config.xml \
     vendor/realme/salaa/proprietary/vendor/etc/aurisys_config_hifi3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/aurisys_config_hifi3.xml \
     vendor/realme/salaa/proprietary/vendor/etc/camera/Arc_wdc_calib.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/Arc_wdc_calib.bin \
@@ -494,7 +496,9 @@ PRODUCT_COPY_FILES += \
     vendor/realme/salaa/proprietary/vendor/etc/init/vendor.mediatek.hardware.mmagent@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mmagent@1.1-service.rc \
     vendor/realme/salaa/proprietary/vendor/etc/init/vendor.mediatek.hardware.mms@1.6-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mms@1.6-service.rc \
     vendor/realme/salaa/proprietary/vendor/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc \
+    vendor/realme/salaa/proprietary/vendor/etc/init/vendor.mediatek.hardware.nwk_opt@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.nwk_opt@1.0-service.rc \
     vendor/realme/salaa/proprietary/vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc \
+    vendor/realme/salaa/proprietary/vendor/etc/init/vendor.trustonic.soter@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.trustonic.soter@1.0-service.rc \
     vendor/realme/salaa/proprietary/vendor/etc/init/vendor.trustonic.tee@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.trustonic.tee@1.1-service.rc \
     vendor/realme/salaa/proprietary/vendor/etc/init/volte_clientapi_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/volte_clientapi_ua.rc \
     vendor/realme/salaa/proprietary/vendor/etc/init/volte_rcs_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/volte_rcs_ua.rc \
@@ -606,6 +610,7 @@ PRODUCT_PACKAGES += \
     thermal_hal \
     libJpgEncPipe \
     libMcClient \
+    libSoterProvision \
     libTEECommon \
     libbwc \
     libcares_naptr \
@@ -653,6 +658,7 @@ PRODUCT_PACKAGES += \
     libvpu \
     libvpu5 \
     libmtk_drvb \
+    soter_attk_provision \
     vendor.mediatek.hardware.videotelephony@1.0_vendor \
     vendor.oplus.hardware.commondcs@1.0 \
     audio.primary.mt6785 \
@@ -1373,9 +1379,11 @@ PRODUCT_PACKAGES += \
     libFaceBeautyCap \
     libFaceBeautyPre \
     libFrameRecord \
+    libMcTeeSoter \
     libMegviiHumBokehPost-mtk \
     libNoFpsActor \
     libOpenCL \
+    libPerfectlyClearCrux \
     libPolarrRender \
     libSQLiteModule_VER_ALL \
     libSonyIMX230PdafLibrary \
@@ -1619,6 +1627,7 @@ PRODUCT_PACKAGES += \
     libneuron_platform \
     libneuropilot_hal_utils \
     libnir_neon_driver_ndk.mtk.vndk \
+    libnwk_opt_halwrap_vendor \
     libnxp_extamp_intf \
     libocam_common \
     liboplus.aishutter \
@@ -1672,6 +1681,7 @@ PRODUCT_PACKAGES += \
     libnir_neon_driver \
     libpq_prot \
     libmtkcam_streaminfo_plugin-p1stt \
+    nwk_opt_imp \
     ov02b1b_mipi_mono_IdxMgr \
     ov02b1b_mipi_mono_tuning \
     ov64b_mipi_raw_20730_IdxMgr \
@@ -1734,6 +1744,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.netdagent@1.0 \
     vendor.mediatek.hardware.nvram@1.0 \
     vendor.mediatek.hardware.nvram@1.1 \
+    vendor.mediatek.hardware.nwk_opt@1.0 \
     vendor.mediatek.hardware.power@2.0 \
     vendor.mediatek.hardware.pq@2.0 \
     vendor.mediatek.hardware.pq@2.1 \
@@ -1749,6 +1760,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.pq@2.7 \
     vendor.mediatek.hardware.pq@2.8 \
     vendor.mediatek.hardware.pq@2.9 \
+    vendor.qti.hardware.soter@1.0 \
     vendor.trustonic.tee.tui@1.0 \
     vendor.trustonic.tee@1.0 \
     vendor.trustonic.tee@1.1 \
@@ -1807,6 +1819,8 @@ PRODUCT_PACKAGES += \
     fingerprint.goodix_G5.default \
     fingerprint.goodix_G6.default \
     fingerprint.goodix_G7.default \
+    fpsensor_fingerprint.default \
+    sidefp_fingerprint.default \
     libCipCommon \
     libCipParamProcess \
     libCipParameter0 \
@@ -1821,6 +1835,7 @@ PRODUCT_PACKAGES += \
     libRbsFlow \
     libRbsFlow_cap \
     libSonyIMX471RmscLibrary \
+    libTeeClient \
     libarcsoft_dualcam_wt_calibration \
     libarcsoft_dualcam_wt_verification \
     libarcsoft_portrait_super_night_raw_mtk \
@@ -1864,6 +1879,7 @@ PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3-service-mtk-dsp-gpu.xml \
     lbs_hidl_service@1.0.xml \
     manifest_android.hardware.drm@1.4-service.widevine.xml \
+    manifest_soter.xml \
     gauge_authenticate \
     manifest_oplusSensor.xml \
     manifest_oplus_charger.xml \
@@ -1900,6 +1916,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mms@1.6-service \
     vendor.mediatek.hardware.nvram@1.1-service \
     vendor.mediatek.hardware.pq@2.2-service \
+    vendor.trustonic.soter@1.0-service \
     vendor.trustonic.tee@1.1-service \
     vtservice_hidl \
     ipsec_mon \

@@ -139,6 +139,47 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libSoterProvision",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libSoterProvision.so",
+            ],
+            shared_libs: [
+                "libMcClient",
+                "liblog",
+                "libcrypto",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libSoterProvision.so",
+            ],
+            shared_libs: [
+                "libMcClient",
+                "liblog",
+                "libcrypto",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libTEECommon",
     owner: "realme",
     strip: {
@@ -1996,6 +2037,47 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "both",
     relative_install_path: "mt6785",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "soter_attk_provision",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/soter_attk_provision.so",
+            ],
+            shared_libs: [
+                "libSoterProvision",
+                "liblog",
+                "libcrypto",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/soter_attk_provision.so",
+            ],
+            shared_libs: [
+                "libSoterProvision",
+                "liblog",
+                "libcrypto",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
     prefer: true,
     soc_specific: true,
 }
@@ -20312,6 +20394,33 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libMcTeeSoter",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libMcTeeSoter.so",
+            ],
+            shared_libs: [
+                "libMcClient",
+                "liblog",
+                "libcrypto",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libMegviiHumBokehPost-mtk",
     owner: "realme",
     strip: {
@@ -20385,6 +20494,30 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libPerfectlyClearCrux",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libPerfectlyClearCrux.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libdl",
+                "libc",
+                "libm",
             ],
         },
     },
@@ -28285,6 +28418,38 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libnwk_opt_halwrap_vendor",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libnwk_opt_halwrap_vendor.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libbinder",
+                "libcutils",
+                "libutils",
+                "libhidlbase",
+                "libhidltransport",
+                "libhwbinder",
+                "vendor.mediatek.hardware.nwk_opt@1.0",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libnxp_extamp_intf",
     owner: "realme",
     strip: {
@@ -29806,6 +29971,37 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "64",
     relative_install_path: "mtkcam",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "nwk_opt_imp",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/nwk_opt_imp.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libhardware",
+                "vendor.mediatek.hardware.nwk_opt@1.0",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
     prefer: true,
     soc_specific: true,
 }
@@ -31806,6 +32002,34 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.nwk_opt@1.0",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.mediatek.hardware.nwk_opt@1.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "vendor.mediatek.hardware.power@2.0",
     owner: "realme",
     strip: {
@@ -32303,6 +32527,34 @@ cc_prebuilt_library_shared {
                 "vendor.mediatek.hardware.pq@2.6",
                 "vendor.mediatek.hardware.pq@2.7",
                 "vendor.mediatek.hardware.pq@2.8",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.qti.hardware.soter@1.0",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.qti.hardware.soter@1.0.so",
+            ],
+            shared_libs: [
                 "libhidlbase",
                 "liblog",
                 "libutils",
@@ -34152,6 +34404,61 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "fpsensor_fingerprint.default",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/hw/fpsensor_fingerprint.default.so",
+            ],
+            shared_libs: [
+                "libTeeClient",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "hw",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "sidefp_fingerprint.default",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/hw/sidefp_fingerprint.default.so",
+            ],
+            shared_libs: [
+                "libTeeClient",
+                "liblog",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "hw",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libCipCommon",
     owner: "realme",
     strip: {
@@ -34485,6 +34792,30 @@ cc_prebuilt_library_shared {
         android_arm64: {
             srcs: [
                 "proprietary/odm/lib64/libSonyIMX471RmscLibrary.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libTeeClient",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libTeeClient.so",
             ],
             shared_libs: [
                 "liblog",
@@ -35571,6 +35902,15 @@ prebuilt_etc_xml {
     soc_specific: true,
 }
 
+prebuilt_etc_xml {
+    name: "manifest_soter.xml",
+    owner: "realme",
+    src: "proprietary/vendor/etc/vintf/manifest/manifest_soter.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
 prebuilt_etc {
     name: "gauge_authenticate",
     owner: "realme",
@@ -36499,6 +36839,41 @@ cc_prebuilt_binary {
                 "libutils-v32",
                 "libhardware",
                 "vendor.mediatek.hardware.pq@2.13",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "vendor.trustonic.soter@1.0-service",
+    owner: "realme",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/vendor.trustonic.soter@1.0-service",
+            ],
+            shared_libs: [
+                "libbinder",
+                "liblog",
+                "libutils",
+                "libhidlbase",
+                "libhidltransport",
+                "libhidlmemory",
+                "android.hidl.allocator@1.0",
+                "android.hidl.memory@1.0",
+                "libMcTeeSoter",
+                "vendor.qti.hardware.soter@1.0",
                 "libc++",
                 "libc",
                 "libm",
