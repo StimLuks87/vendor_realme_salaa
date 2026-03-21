@@ -142,7 +142,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/salaa/proprietary/odm/etc/permissions/vendor-oplus-hardware-charger.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/vendor-oplus-hardware-charger.xml \
     vendor/realme/salaa/proprietary/odm/etc/permissions/vendor-oplus-hardware-mtkmodemaci.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/vendor-oplus-hardware-mtkmodemaci.xml \
     vendor/realme/salaa/proprietary/odm/etc/sensor/sensor_config.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/sensor_config.json \
-    vendor/realme/salaa/proprietary/odm/etc/temperature_profile/sys_high_temp_protect_realme_2068A.xml:$(TARGET_COPY_OUT_ODM)/etc/temperature_profile/sys_high_temp_protect_realme_2068A.xml \
+    vendor/realme/salaa/proprietary/odm/etc/temperature_profile/sys_high_temp_protect_realme_20682.xml:$(TARGET_COPY_OUT_ODM)/etc/temperature_profile/sys_high_temp_protect_realme_20682.xml \
     vendor/realme/salaa/proprietary/odm/etc/temperature_profile/sys_thermal_control_config.xml:$(TARGET_COPY_OUT_ODM)/etc/temperature_profile/sys_thermal_control_config.xml \
     vendor/realme/salaa/proprietary/odm/etc/tianma_nt36672c_tianma_eyeprotect_data.xml:$(TARGET_COPY_OUT_ODM)/etc/tianma_nt36672c_tianma_eyeprotect_data.xml \
     vendor/realme/salaa/proprietary/odm/etc/tm_nt37701_2048_tm_nt37701_42_eyeprotect_data.xml:$(TARGET_COPY_OUT_ODM)/etc/tm_nt37701_2048_tm_nt37701_42_eyeprotect_data.xml \
@@ -166,16 +166,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/salaa/proprietary/odm/firmware/barca_alarm_ring_RTP_120.bin:$(TARGET_COPY_OUT_ODM)/firmware/barca_alarm_ring_RTP_120.bin \
     vendor/realme/salaa/proprietary/odm/firmware/barca_incoming_ring_RTP_121.bin:$(TARGET_COPY_OUT_ODM)/firmware/barca_incoming_ring_RTP_121.bin \
     vendor/realme/salaa/proprietary/odm/firmware/barca_notice_ring_RTP_122.bin:$(TARGET_COPY_OUT_ODM)/firmware/barca_notice_ring_RTP_122.bin \
-    vendor/realme/salaa/proprietary/odm/firmware/fastchg/20171/oplus_vooc_fw_op10.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/20171/oplus_vooc_fw_op10.bin \
-    vendor/realme/salaa/proprietary/odm/firmware/fastchg/20353/oplus_vooc_fw_op10.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/20353/oplus_vooc_fw_op10.bin \
-    vendor/realme/salaa/proprietary/odm/firmware/fastchg/20615/charging_thermal_config_default.txt:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/20615/charging_thermal_config_default.txt \
-    vendor/realme/salaa/proprietary/odm/firmware/fastchg/20662/charging_thermal_config_default.txt:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/20662/charging_thermal_config_default.txt \
-    vendor/realme/salaa/proprietary/odm/firmware/fastchg/20827/oplus_vooc_fw_op10.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/20827/oplus_vooc_fw_op10.bin \
-    vendor/realme/salaa/proprietary/odm/firmware/fastchg/20827/oplus_vooc_fw_rt5125.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/20827/oplus_vooc_fw_rt5125.bin \
-    vendor/realme/salaa/proprietary/odm/firmware/fastchg/20831/oplus_vooc_fw_op10.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/20831/oplus_vooc_fw_op10.bin \
-    vendor/realme/salaa/proprietary/odm/firmware/fastchg/20831/oplus_vooc_fw_rt5125.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/20831/oplus_vooc_fw_rt5125.bin \
-    vendor/realme/salaa/proprietary/odm/firmware/fastchg/21609/charging_thermal_config_default.txt:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/21609/charging_thermal_config_default.txt \
-    vendor/realme/salaa/proprietary/odm/firmware/fastchg/21651/charging_thermal_config_default.txt:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/21651/charging_thermal_config_default.txt \
     vendor/realme/salaa/proprietary/odm/firmware/fastchg/charging_thermal_config_default.txt:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/charging_thermal_config_default.txt \
     vendor/realme/salaa/proprietary/odm/firmware/tp/20682/FW_NT36672C_NF_BOE.bin:$(TARGET_COPY_OUT_ODM)/firmware/tp/20682/FW_NT36672C_NF_BOE.bin \
     vendor/realme/salaa/proprietary/odm/firmware/tp/20682/FW_NT36672C_NF_BOE_FAE.bin:$(TARGET_COPY_OUT_ODM)/firmware/tp/20682/FW_NT36672C_NF_BOE_FAE.bin \
