@@ -914,6 +914,9 @@
                          1  for Spirent's DOCOMO_SUPL_IOT_UEB_AGNSS_WCDMA_SUPLV2_TP2 test cases
                               Disable ganssIonosphericModel, ganssAdditionalIonosphericModelForDataID11, ganssEarthOrientationParameters (for TC-0024)
                               use notEnoughSats but do not use notEnoughGANSSSats (for TC-0014, TC-0024 and TC-0031)
+                         2  for RAKUTEN AGPS spec requirement, ALPS07517070.
+                              a. Set position method by MSA/MSB, not by XML config.
+                              b. Do not change MSA/MSB type during one SUPL session.
 
     glonass_msa_enable
         enable/disable the MSA capability for glonass
