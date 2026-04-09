@@ -438,6 +438,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/salaa/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Verizon_Wireless.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Verizon_Wireless.xml \
     vendor/realme/salaa/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Vodafone.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Vodafone.xml \
     vendor/realme/salaa/proprietary/vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.4-service.widevine.rc \
+    vendor/realme/salaa/proprietary/vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc \
     vendor/realme/salaa/proprietary/vendor/etc/init/android.hardware.keymaster@4.0-service.trustonic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.0-service.trustonic.rc \
     vendor/realme/salaa/proprietary/vendor/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc \
     vendor/realme/salaa/proprietary/vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc \
@@ -594,14 +595,36 @@ PRODUCT_COPY_FILES += \
     vendor/realme/salaa/proprietary/vendor/firmware/soc1_0_ram_bt_2a_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc1_0_ram_bt_2a_1_hdr.bin \
     vendor/realme/salaa/proprietary/vendor/firmware/soc1_0_ram_mcu_2a_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc1_0_ram_mcu_2a_1_hdr.bin \
     vendor/realme/salaa/proprietary/vendor/firmware/soc1_0_ram_wifi_2a_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc1_0_ram_wifi_2a_1_hdr.bin \
+    vendor/realme/salaa/proprietary/vendor/lib/egl/egl.cfg:$(TARGET_COPY_OUT_VENDOR)/lib/egl/egl.cfg \
     vendor/realme/salaa/proprietary/vendor/libnfc-nxp_RF.conf:$(TARGET_COPY_OUT_VENDOR)/libnfc-nxp_RF.conf
 
 PRODUCT_PACKAGES += \
+    arm.graphics-V1-ndk_platform \
+    libGLES_mali \
+    libGLES_meow \
+    libMEOW_data \
+    libMEOW_gift \
+    libMEOW_qt \
+    libMEOW_trace \
+    android.hardware.graphics.allocator@4.0-impl-mediatek \
+    android.hardware.graphics.mapper@4.0-impl-mediatek \
     thermal_hal \
+    vendor.mediatek.hardware.mms@1.6-impl \
+    vendor.mediatek.hardware.pq@2.13-impl \
+    libDefaultFpsActor \
+    libFrameRecord \
     libJpgEncPipe \
     libMcClient \
+    libNoFpsActor \
+    libOpenCL \
+    libPolarrRender \
     libSoterProvision \
     libTEECommon \
+    libaal_cust \
+    libaal_key \
+    libaal_mtk \
+    libaalservice \
+    libappgamepq \
     libbwc \
     libcares_naptr \
     libconnfem \
@@ -613,11 +636,20 @@ PRODUCT_PACKAGES += \
     libcvsd_mtk \
     libdynamiclog \
     libfile_op \
+    libgamehdr \
+    libged \
+    libgpu_aux \
+    libgpud \
+    libgralloc_extra \
+    libgralloc_metadata \
+    libgralloctypes_mtk \
     libgz_gp_client \
     libgz_uree \
     libhdrvideo \
     libhevce_sb.ca7.android \
     libhwconfigurationutil \
+    libhwm \
+    libimgsensorca \
     libion_mtk \
     libion_ulit \
     libipsec_ims_shr \
@@ -625,6 +657,7 @@ PRODUCT_PACKAGES += \
     libjpeg-alpha_vendor \
     libladder \
     libminiui \
+    libmml \
     libmmprofile \
     libmnetlink_v104 \
     libmsbc_mtk \
@@ -637,18 +670,48 @@ PRODUCT_PACKAGES += \
     libnvram \
     libnvram_sec \
     libpixelflinger \
+    libpq_cust_base \
+    libpqframework \
+    libpqparamparser \
+    libpqpconfig \
+    librgbwlightsensor \
+    libscltm \
     libsimlock \
     libsimmelock \
     libssl-md \
     libssl-ss \
     libsysenv \
     libthha \
+    libudf \
     libvcodec_oal \
     libverno \
     libvpu \
     libvpu5 \
+    libdpframework \
     libmtk_drvb \
+    libpq_prot \
     soter_attk_provision \
+    vendor.mediatek.hardware.mms@1.0 \
+    vendor.mediatek.hardware.mms@1.1 \
+    vendor.mediatek.hardware.mms@1.2 \
+    vendor.mediatek.hardware.mms@1.3 \
+    vendor.mediatek.hardware.mms@1.4 \
+    vendor.mediatek.hardware.mms@1.5 \
+    vendor.mediatek.hardware.mms@1.6 \
+    vendor.mediatek.hardware.pq@2.0 \
+    vendor.mediatek.hardware.pq@2.1 \
+    vendor.mediatek.hardware.pq@2.10 \
+    vendor.mediatek.hardware.pq@2.11 \
+    vendor.mediatek.hardware.pq@2.12 \
+    vendor.mediatek.hardware.pq@2.13 \
+    vendor.mediatek.hardware.pq@2.2 \
+    vendor.mediatek.hardware.pq@2.3 \
+    vendor.mediatek.hardware.pq@2.4 \
+    vendor.mediatek.hardware.pq@2.5 \
+    vendor.mediatek.hardware.pq@2.6 \
+    vendor.mediatek.hardware.pq@2.7 \
+    vendor.mediatek.hardware.pq@2.8 \
+    vendor.mediatek.hardware.pq@2.9 \
     vendor.mediatek.hardware.videotelephony@1.0_vendor \
     vendor.oplus.hardware.commondcs@1.0 \
     audio.primary.mt6785 \
@@ -718,20 +781,11 @@ PRODUCT_PACKAGES += \
     APUWareXrpServer \
     AVCSecureVdecCA \
     VP9SecureVdecCA \
-    arm.graphics-V1-ndk_platform \
-    libGLES_mali \
-    libGLES_meow \
-    libMEOW_data \
-    libMEOW_gift \
-    libMEOW_qt \
-    libMEOW_trace \
     gc02m1_mipi_raw_20730_IdxMgr \
     gc02m1_mipi_raw_20730_tuning \
     gc02m1b_mipi_mono_20730_IdxMgr \
     gc02m1b_mipi_mono_20730_tuning \
     android.hardware.camera.provider@2.6-impl-mediatek \
-    android.hardware.graphics.allocator@4.0-impl-mediatek \
-    android.hardware.graphics.mapper@4.0-impl-mediatek \
     gps.default \
     hwcomposer.mt6785 \
     kmsetkey.trustonic \
@@ -745,9 +799,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.camera.lomoeffect@1.0-impl \
     vendor.mediatek.hardware.camera.postproc@1.0-impl \
     vendor.mediatek.hardware.keymaster_attestation@1.1-impl \
-    vendor.mediatek.hardware.mms@1.6-impl \
     vendor.mediatek.hardware.nvram@1.1-impl \
-    vendor.mediatek.hardware.pq@2.13-impl \
     vendor.mediatek.hardware.videotelephony@1.0-impl \
     imx350_mipi_raw_IdxMgr \
     imx350_mipi_raw_tuning \
@@ -1365,16 +1417,11 @@ PRODUCT_PACKAGES += \
     libCamera_salawideov8856_Video_1080 \
     libCamera_salawideov8856_Video_4k \
     libDR \
-    libDefaultFpsActor \
     libFaceBeautyCap \
     libFaceBeautyPre \
-    libFrameRecord \
     libMcTeeSoter \
     libMegviiHumBokehPost-mtk \
-    libNoFpsActor \
-    libOpenCL \
     libPerfectlyClearCrux \
-    libPolarrRender \
     libSQLiteModule_VER_ALL \
     libSonyIMX230PdafLibrary \
     libSonyIMX230PdafLibraryWrapper \
@@ -1390,14 +1437,9 @@ PRODUCT_PACKAGES += \
     libVDSuperPhotoAPI \
     libWaterMark \
     lib_bsscore \
-    libaal_cust \
-    libaal_key \
-    libaal_mtk \
-    libaalservice \
     libacdk \
     libakm \
     libapmonitor_vendor \
-    libappgamepq \
     libapu_mdw \
     libapusys \
     libapusys_edma \
@@ -1502,23 +1544,14 @@ PRODUCT_PACKAGES += \
     libfft_vendor \
     libforkexecwrap \
     libformatter \
-    libgamehdr \
-    libged \
-    libgpu_aux \
-    libgpud \
-    libgralloc_extra \
-    libgralloc_metadata \
-    libgralloctypes_mtk \
     libheichal \
     libhwm-oplus \
-    libhwm \
     libhydra \
     libicd_decoder \
     libifcutils_mtk \
     libimageio \
     libimageio_plat_drv \
     libimageio_plat_pipe \
-    libimgsensorca \
     libispcameraca \
     libkmsetkey \
     libksensor \
@@ -1528,7 +1561,6 @@ PRODUCT_PACKAGES += \
     libmipc \
     libml_util \
     libmmagent \
-    libmml \
     libmnl \
     libmpbase \
     libmtk-fusion-ril-prop-vsim \
@@ -1628,17 +1660,11 @@ PRODUCT_PACKAGES += \
     libpkm \
     libpn553_fw \
     libpn557_fw \
-    libpq_cust_base \
-    libpqframework \
-    libpqparamparser \
-    libpqpconfig \
     libratconfig \
     libremosaic_wrapper \
     libremosaiclib \
-    librgbwlightsensor \
     librilfusion \
     librpc \
-    libscltm \
     libsensor_custom \
     libsimaka \
     libsn100u_fw \
@@ -1652,7 +1678,6 @@ PRODUCT_PACKAGES += \
     libtranslator_mdmi_v2.8.2 \
     libtranslator_utils \
     libtrm \
-    libudf \
     liburee_meta_drmkeyinstall \
     libvcodecdrv_header_stub \
     libvia-ril \
@@ -1664,12 +1689,10 @@ PRODUCT_PACKAGES += \
     libwpfa \
     libwvhidl \
     libwvdrmengine \
-    libdpframework \
     libmcv_runtime.mtk \
     libneuron_runtime.5 \
     libneuron_runtime \
     libnir_neon_driver \
-    libpq_prot \
     libmtkcam_streaminfo_plugin-p1stt \
     nwk_opt_imp \
     ov02b1b_mipi_mono_IdxMgr \
@@ -1722,13 +1745,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mdmonitor@1.0 \
     vendor.mediatek.hardware.mmagent@1.0 \
     vendor.mediatek.hardware.mmagent@1.1 \
-    vendor.mediatek.hardware.mms@1.0 \
-    vendor.mediatek.hardware.mms@1.1 \
-    vendor.mediatek.hardware.mms@1.2 \
-    vendor.mediatek.hardware.mms@1.3 \
-    vendor.mediatek.hardware.mms@1.4 \
-    vendor.mediatek.hardware.mms@1.5 \
-    vendor.mediatek.hardware.mms@1.6 \
     vendor.mediatek.hardware.mtkradioex@2.0 \
     vendor.mediatek.hardware.mtkradioex@3.0 \
     vendor.mediatek.hardware.netdagent@1.0 \
@@ -1736,20 +1752,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.nvram@1.1 \
     vendor.mediatek.hardware.nwk_opt@1.0 \
     vendor.mediatek.hardware.power@2.0 \
-    vendor.mediatek.hardware.pq@2.0 \
-    vendor.mediatek.hardware.pq@2.1 \
-    vendor.mediatek.hardware.pq@2.10 \
-    vendor.mediatek.hardware.pq@2.11 \
-    vendor.mediatek.hardware.pq@2.12 \
-    vendor.mediatek.hardware.pq@2.13 \
-    vendor.mediatek.hardware.pq@2.2 \
-    vendor.mediatek.hardware.pq@2.3 \
-    vendor.mediatek.hardware.pq@2.4 \
-    vendor.mediatek.hardware.pq@2.5 \
-    vendor.mediatek.hardware.pq@2.6 \
-    vendor.mediatek.hardware.pq@2.7 \
-    vendor.mediatek.hardware.pq@2.8 \
-    vendor.mediatek.hardware.pq@2.9 \
     vendor.qti.hardware.soter@1.0 \
     vendor.trustonic.tee.tui@1.0 \
     vendor.trustonic.tee@1.0 \
@@ -1791,9 +1793,12 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.apuware.xrp@1.0 \
     vendor.mediatek.hardware.apuware.xrp@2.0 \
     libawinicsmartpaparse \
+    libdpservice \
     libormshalclient \
     libpnscr2 \
     librpmbengclient \
+    libswresample \
+    libswscale \
     libtrustonic_keybox_ca \
     vendor.oplus.hardware.charger@1.0 \
     vendor.oplus.hardware.ims@1.0 \
@@ -1835,7 +1840,6 @@ PRODUCT_PACKAGES += \
     libarcsoft_super_night_raw_mtk \
     libbsproxy \
     libcalibverifyW_T \
-    libdpservice \
     libegis_hal \
     libgf_hal_G2 \
     libgf_hal_G3 \
@@ -1869,6 +1873,7 @@ PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3-service-mtk-dsp-gpu.xml \
     lbs_hidl_service@1.0.xml \
     manifest_android.hardware.drm@1.4-service.widevine.xml \
+    manifest_hwcomposer.xml \
     manifest_soter.xml \
     gauge_authenticate \
     manifest_oplusSensor.xml \
@@ -1963,7 +1968,10 @@ PRODUCT_PACKAGES += \
     rpmbengclient_test
 
 PRODUCT_PACKAGES += \
+    vendor_lib_hw_vulkan_mt6785_so \
+    vendor_lib_libdpframework_so \
     vendor_lib_libmtk_drvb_so \
+    vendor_lib_libpq_prot_so \
     vendor_lib64_hw_vulkan_mt6785_so \
     vendor_lib64_hw_kmsetkey_default_so \
     vendor_lib64_hw_gatekeeper_trustonic_so \
