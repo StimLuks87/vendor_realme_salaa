@@ -1529,7 +1529,6 @@ PRODUCT_PACKAGES += \
     libvia-ril \
     libviagpsrpc \
     libviamipc-ril \
-    libwifi-hal-mtk \
     libwifitest \
     libwo \
     libwpfa \
@@ -1732,7 +1731,6 @@ PRODUCT_PACKAGES += \
     manifest_oplus_mtkmodemaci.xml \
     manifest_oplus_performance.xml \
     manifest_oplus_touch.xml \
-    lbs_dbg \
     AgentTest \
     atci_service \
     bip \
@@ -1789,7 +1787,6 @@ PRODUCT_PACKAGES += \
     recordevent \
     replayevent \
     rt5512_calibration \
-    rttv \
     starter \
     stp_dump3 \
     stroke \

@@ -31566,35 +31566,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libwifi-hal-mtk",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libwifi-hal-mtk.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcutils",
-                "liblog",
-                "libnl",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libwifitest",
     owner: "realme",
     strip: {
@@ -37293,38 +37264,6 @@ prebuilt_etc_xml {
 }
 
 cc_prebuilt_binary {
-    name: "lbs_dbg",
-    owner: "realme",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system/bin/lbs_dbg",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libbase",
-                "libhardware",
-                "libbinder",
-                "libhidlbase",
-                "libhidltransport",
-                "libutils",
-                "vendor.mediatek.hardware.lbs@1.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-}
-
-cc_prebuilt_binary {
     name: "AgentTest",
     owner: "realme",
     target: {
@@ -38988,34 +38927,6 @@ cc_prebuilt_binary {
         },
     },
     compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "rttv",
-    owner: "realme",
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/bin/rttv",
-            ],
-            shared_libs: [
-                "libaedv",
-                "libcutils",
-                "liblog",
-                "libz",
-                "libc",
-                "libdl",
-                "libm",
-                "libc++",
-            ],
-        },
-    },
-    compile_multilib: "32",
     strip: {
         none: true,
     },
