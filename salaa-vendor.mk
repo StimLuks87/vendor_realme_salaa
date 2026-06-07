@@ -142,7 +142,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/salaa/proprietary/odm/etc/permissions/vendor-oplus-hardware-charger.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/vendor-oplus-hardware-charger.xml \
     vendor/realme/salaa/proprietary/odm/etc/permissions/vendor-oplus-hardware-mtkmodemaci.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/vendor-oplus-hardware-mtkmodemaci.xml \
     vendor/realme/salaa/proprietary/odm/etc/sensor/sensor_config.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/sensor_config.json \
-    vendor/realme/salaa/proprietary/odm/etc/temperature_profile/sys_high_temp_protect_realme_20743.xml:$(TARGET_COPY_OUT_ODM)/etc/temperature_profile/sys_high_temp_protect_realme_20743.xml \
+    vendor/realme/salaa/proprietary/odm/etc/temperature_profile/sys_high_temp_protect_realme_20741.xml:$(TARGET_COPY_OUT_ODM)/etc/temperature_profile/sys_high_temp_protect_realme_20741.xml \
     vendor/realme/salaa/proprietary/odm/etc/temperature_profile/sys_thermal_control_config.xml:$(TARGET_COPY_OUT_ODM)/etc/temperature_profile/sys_thermal_control_config.xml \
     vendor/realme/salaa/proprietary/odm/etc/tianma_nt36672c_tianma_eyeprotect_data.xml:$(TARGET_COPY_OUT_ODM)/etc/tianma_nt36672c_tianma_eyeprotect_data.xml \
     vendor/realme/salaa/proprietary/odm/etc/tm_nt37701_2048_tm_nt37701_42_eyeprotect_data.xml:$(TARGET_COPY_OUT_ODM)/etc/tm_nt37701_2048_tm_nt37701_42_eyeprotect_data.xml \

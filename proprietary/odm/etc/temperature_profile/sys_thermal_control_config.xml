@@ -490,7 +490,7 @@
                 stopCameraVideo="0" cameraBrightness="255" disCamera="0" disWifiHotSpot="0" disTorch="0" disFrameInsert="0" fps="0" refreshRate="0"/>
 
                 <gear_config tempGear="8"
-                cpu="2" gpu="-1" restrict="1" brightness="0" charge="1" modem="0" disFlashlight="0"
+                cpu="2" gpu="-1" restrict="1" brightness="2" charge="1" modem="0" disFlashlight="0"
                 stopCameraVideo="0" cameraBrightness="255" disCamera="0" disWifiHotSpot="0" disTorch="0" disFrameInsert="0" fps="0" refreshRate="0"/>
 
                 <gear_config tempGear="9"
@@ -642,7 +642,7 @@
                 stopCameraVideo="0" cameraBrightness="255" disCamera="0" disWifiHotSpot="0" disTorch="0" disFrameInsert="0" fps="0" refreshRate="0"/>
 
                 <gear_config tempGear="8"
-                cpu="2" gpu="-1" restrict="0" brightness="2" charge="2" modem="0" disFlashlight="0"
+                cpu="2" gpu="-1" restrict="0" brightness="0" charge="2" modem="0" disFlashlight="0"
                 stopCameraVideo="0" cameraBrightness="255" disCamera="0" disWifiHotSpot="0" disTorch="0" disFrameInsert="0" fps="0" refreshRate="0"/>
 
                 <gear_config tempGear="9"

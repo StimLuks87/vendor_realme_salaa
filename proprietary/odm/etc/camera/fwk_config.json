@@ -99,6 +99,10 @@
         "thirdPartyAppWidthLimitForCam1API2":2304,
         "thirdPartyAppHeightLimitForCam1API2":1728
     },
+    "com.pinterest": {
+        "maxPreviewWidthForAPI1": 2160,
+        "maxPreviewHeightForAPI1": 1080
+    },
     "com.whatsapp.w4b": {
         "app_enable_rio": true
     },
