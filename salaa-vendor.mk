@@ -194,7 +194,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/salaa/proprietary/odm/vendor/app/mcRegistry/09070000000000000000000000000000.drbin:$(TARGET_COPY_OUT_ODM)/vendor/app/mcRegistry/09070000000000000000000000000000.drbin \
     vendor/realme/salaa/proprietary/odm/vendor/app/mcRegistry/09080000000000000000000000000000.tlbin:$(TARGET_COPY_OUT_ODM)/vendor/app/mcRegistry/09080000000000000000000000000000.tlbin \
     vendor/realme/salaa/proprietary/odm/vendor/app/mcRegistry/09150000000000000000000000000000.tlbin:$(TARGET_COPY_OUT_ODM)/vendor/app/mcRegistry/09150000000000000000000000000000.tlbin \
-    vendor/realme/salaa/proprietary/system/etc/public.libraries-mtk.txt:$(TARGET_COPY_OUT_SYSTEM)/etc/public.libraries-mtk.txt \
     vendor/realme/salaa/proprietary/system_ext/etc/camera/engineer_camera_config:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/camera/engineer_camera_config \
     vendor/realme/salaa/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
     vendor/realme/salaa/proprietary/vendor/app/mcRegistry/020b0000000000000000000000000000.drbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/020b0000000000000000000000000000.drbin \
@@ -621,8 +620,13 @@ PRODUCT_PACKAGES += \
     libvpud_vcodec \
     libvt_custom \
     vendor.mediatek.hardware.rcs@2.0 \
+    APUWareApusysServer \
+    APUWareApusysServer_v2 \
+    APUWareHmpServer \
     APUWareUtilsServer \
+    APUWareUtilsServer_v2 \
     APUWareXrpServer \
+    APUWareXrpServer_v2 \
     AVCSecureVdecCA \
     VP9SecureVdecCA \
     gc02m1_mipi_raw_20730_IdxMgr \
@@ -1567,8 +1571,14 @@ PRODUCT_PACKAGES += \
     salaa_qtech_main_s5kgm1sp_IdxMgr \
     salaa_qtech_main_s5kgm1sp_tuning \
     vendor.mediatek.hardware.apmonitor@2.0 \
-    vendor.mediatek.hardware.apuware.utils@2.0_vendor \
-    vendor.mediatek.hardware.apuware.xrp@1.0_vendor \
+    vendor.mediatek.hardware.apuware.apusys@1.0 \
+    vendor.mediatek.hardware.apuware.apusys@2.0 \
+    vendor.mediatek.hardware.apuware.apusys@2.1 \
+    vendor.mediatek.hardware.apuware.hmp@1.0 \
+    vendor.mediatek.hardware.apuware.utils@1.0 \
+    vendor.mediatek.hardware.apuware.utils@2.0 \
+    vendor.mediatek.hardware.apuware.xrp@1.0 \
+    vendor.mediatek.hardware.apuware.xrp@2.0 \
     vendor.mediatek.hardware.camera.atms@1.0 \
     vendor.mediatek.hardware.camera.bgservice@1.0 \
     vendor.mediatek.hardware.camera.bgservice@1.1 \
@@ -1602,41 +1612,6 @@ PRODUCT_PACKAGES += \
     vendor.trustonic.tee@1.0 \
     vendor.trustonic.tee@1.1 \
     libteeservice_client.trustonic \
-    libapuwareapusys.mtk \
-    libapuwareapusys_v2.mtk \
-    libapuwarehmp.mtk \
-    libapuwareutils.mtk \
-    libapuwareutils_v2.mtk \
-    libapuwarexrp.mtk \
-    libapuwarexrp_v2.mtk \
-    libarmnn_ndk.mtk \
-    libcmdl_ndk.mtk \
-    libmvpu_cic_ci_compiler.mtk \
-    libmvpu_clc_mvpu_debuginfo.mtk \
-    libmvpu_clc_mvpu_elf.mtk \
-    libmvpu_clc_mvpu_utility.mtk \
-    libmvpu_config.mtk \
-    libmvpu_engine.mtk \
-    libmvpu_engine_pub.mtk \
-    libmvpu_pattern.mtk \
-    libmvpu_pattern_pub.mtk \
-    libmvpu_runtime.mtk \
-    libmvpu_runtime_pub.mtk \
-    libmvpuop_mtk_cv.mtk \
-    libmvpuop_mtk_nn.mtk \
-    libneuron_graph_delegate.mtk \
-    libneuronusdk_adapter.mtk \
-    libnir_neon_driver_ndk.mtk \
-    libtflite_mtk.mtk \
-    libtflite_mtk \
-    vendor.mediatek.hardware.apuware.apusys@1.0 \
-    vendor.mediatek.hardware.apuware.apusys@2.0 \
-    vendor.mediatek.hardware.apuware.apusys@2.1 \
-    vendor.mediatek.hardware.apuware.hmp@1.0 \
-    vendor.mediatek.hardware.apuware.utils@1.0 \
-    vendor.mediatek.hardware.apuware.utils@2.0 \
-    vendor.mediatek.hardware.apuware.xrp@1.0 \
-    vendor.mediatek.hardware.apuware.xrp@2.0 \
     libawinicsmartpaparse \
     libdpservice \
     libormshalclient \
