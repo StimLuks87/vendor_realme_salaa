@@ -1907,7 +1907,6 @@ PRODUCT_PACKAGES += \
     recordevent \
     replayevent \
     rt5512_calibration \
-    rttv \
     starter \
     stp_dump3 \
     stroke \
