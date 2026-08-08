@@ -444,6 +444,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/salaa/proprietary/vendor/etc/init/atci_service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/atci_service.rc \
     vendor/realme/salaa/proprietary/vendor/etc/init/camerahalserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camerahalserver.rc \
     vendor/realme/salaa/proprietary/vendor/etc/init/dmc_core.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dmc_core.rc \
+    vendor/realme/salaa/proprietary/vendor/etc/init/em_hidl_user.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/em_hidl_user.rc \
     vendor/realme/salaa/proprietary/vendor/etc/init/fuelgauged_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_init.rc \
     vendor/realme/salaa/proprietary/vendor/etc/init/fuelgauged_nvram_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_nvram_init.rc \
     vendor/realme/salaa/proprietary/vendor/etc/init/gsm0710muxd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/gsm0710muxd.rc \
@@ -1427,6 +1428,7 @@ PRODUCT_PACKAGES += \
     libasn1c_mdmi \
     libbluetooth_mtk \
     libbluetooth_mtk_pure \
+    libbluetooth_relayer \
     libbluetoothem_mtk \
     libbt-vendor \
     libcam.chdr \
@@ -1721,6 +1723,10 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.dmc@1.0 \
     vendor.mediatek.hardware.dmc@1.1 \
     vendor.mediatek.hardware.dmc@1.2 \
+    vendor.mediatek.hardware.engineermode@1.0 \
+    vendor.mediatek.hardware.engineermode@1.1 \
+    vendor.mediatek.hardware.engineermode@1.2 \
+    vendor.mediatek.hardware.engineermode@1.3 \
     vendor.mediatek.hardware.keymaster_attestation@1.0 \
     vendor.mediatek.hardware.keymaster_attestation@1.1 \
     vendor.mediatek.hardware.lbs@1.0 \
@@ -1760,6 +1766,7 @@ PRODUCT_PACKAGES += \
     vendor.trustonic.tee.tui@1.0 \
     vendor.trustonic.tee@1.0 \
     vendor.trustonic.tee@1.1 \
+    libem_support_jni \
     libteeservice_client.trustonic \
     libawinicsmartpaparse \
     libdpservice \
@@ -1836,6 +1843,7 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.radio@1.0 \
     vendor.oplus.hardware.touch@1.0 \
     HotwordEnrollmentOKGoogleCORTEXM4 \
+    EngineerMode \
     com.android.hotwordenrollment.common.util \
     vendor.oplus.hardware.mtkmodemaci-V1.0-java \
     vendor.oplus.hardware.performance-V1.0-java \
@@ -1863,6 +1871,7 @@ PRODUCT_PACKAGES += \
     doeapp-memtester \
     doeapp-sat \
     dtc_vendor \
+    em_hidl \
     epdg_wod \
     fuelgauged \
     fuelgauged_nvram \
