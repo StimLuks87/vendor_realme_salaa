@@ -133,6 +133,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/salaa/proprietary/odm/etc/init/init.pn8x.nfc.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.pn8x.nfc.rc \
     vendor/realme/salaa/proprietary/odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc \
     vendor/realme/salaa/proprietary/odm/etc/init/vendor.oplus.hardware.charger@1.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.charger@1.0-service.rc \
+    vendor/realme/salaa/proprietary/odm/etc/init/vendor.oplus.hardware.displaypanelfeature@1.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.displaypanelfeature@1.0-service.rc \
     vendor/realme/salaa/proprietary/odm/etc/init/vendor.oplus.hardware.mtkmodemaci@1.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.mtkmodemaci@1.0-service.rc \
     vendor/realme/salaa/proprietary/odm/etc/init/vendor.oplus.hardware.oplusSensor@1.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.oplusSensor@1.0-service.rc \
     vendor/realme/salaa/proprietary/odm/etc/init/vendor.oplus.hardware.performance@1.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.performance@1.0-service.rc \
@@ -251,161 +252,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/salaa/proprietary/vendor/etc/asd/detect.tflite:$(TARGET_COPY_OUT_VENDOR)/etc/asd/detect.tflite \
     vendor/realme/salaa/proprietary/vendor/etc/aurisys_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/aurisys_config.xml \
     vendor/realme/salaa/proprietary/vendor/etc/aurisys_config_hifi3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/aurisys_config_hifi3.xml \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/Arc_wdc_calib.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/Arc_wdc_calib.bin \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/M_Attribute_AG_BMW_1.1.0.model.hardcode:$(TARGET_COPY_OUT_VENDOR)/etc/camera/M_Attribute_AG_BMW_1.1.0.model.hardcode \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/M_Attribute_Gender_Age_1.0.model.hardcode:$(TARGET_COPY_OUT_VENDOR)/etc/camera/M_Attribute_Gender_Age_1.0.model.hardcode \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/M_FaceAttribute_RGB_age_gender_1.7.1.model.hardcode:$(TARGET_COPY_OUT_VENDOR)/etc/camera/M_FaceAttribute_RGB_age_gender_1.7.1.model.hardcode \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/engineer_camera_config:$(TARGET_COPY_OUT_VENDOR)/etc/camera/engineer_camera_config \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/faceBeautyParam/fb_default:$(TARGET_COPY_OUT_VENDOR)/etc/camera/faceBeautyParam/fb_default \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/faceBeautyParam/fb_default_20682:$(TARGET_COPY_OUT_VENDOR)/etc/camera/faceBeautyParam/fb_default_20682 \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/000.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/000.png \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/000_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/000_pre.bin \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/000_pre.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/000_pre.png \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/001.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/001.png \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/001_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/001_pre.bin \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/001_pre.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/001_pre.png \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/002.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/002.png \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/002_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/002_pre.bin \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/002_pre.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/002_pre.png \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/003.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/003.png \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/003_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/003_pre.bin \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/003_pre.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/003_pre.png \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/010.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/010.png \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/010_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/010_pre.bin \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/010_pre.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/010_pre.png \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/011.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/011.png \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/011_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/011_pre.bin \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/011_pre.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/011_pre.png \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/012.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/012.png \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/012_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/012_pre.bin \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/012_pre.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/012_pre.png \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/013.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/013.png \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/013_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/013_pre.bin \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/100.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/100.png \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/100_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/100_pre.bin \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/100_pre.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/100_pre.png \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/101.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/101.png \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/101_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/101_pre.bin \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/101_pre.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/101_pre.png \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/102.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/102.png \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/102_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/102_pre.bin \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/102_pre.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/102_pre.png \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/103.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/103.png \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/103_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/103_pre.bin \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/103_pre.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/103_pre.png \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/110.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/110.png \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/110_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/110_pre.bin \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/110_pre.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/110_pre.png \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/111.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/111.png \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/111_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/111_pre.bin \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/111_pre.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/111_pre.png \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/112.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/112.png \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/112_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/112_pre.bin \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/112_pre.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/112_pre.png \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/113.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/113.png \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/113_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/113_pre.bin \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/200.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/200.png \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/200_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/200_pre.bin \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/200_pre.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/200_pre.png \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/201.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/201.png \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/201_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/201_pre.bin \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/201_pre.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/201_pre.png \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/202.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/202.png \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/202_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/202_pre.bin \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/202_pre.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/202_pre.png \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/203.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/203.png \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/203_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/203_pre.bin \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/203_pre.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/203_pre.png \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/210.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/210.png \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/210_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/210_pre.bin \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/210_pre.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/210_pre.png \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/211.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/211.png \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/211_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/211_pre.bin \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/211_pre.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/211_pre.png \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/212.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/212.png \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/212_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/212_pre.bin \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/212_pre.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/212_pre.png \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/213.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/213.png \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/213_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/213_pre.bin \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/PreCalVarBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/PreCalVarBinary.bin \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/PreHighPassBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/PreHighPassBinary.bin \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/PreHoriFilterBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/PreHoriFilterBinary.bin \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/PreMakeupBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/PreMakeupBinary.bin \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/PreMorphBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/PreMorphBinary.bin \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/PreNoFaceBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/PreNoFaceBinary.bin \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/PreNormalBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/PreNormalBinary.bin \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/PreOnlywhitenBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/PreOnlywhitenBinary.bin \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/PreSkintuneBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/PreSkintuneBinary.bin \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/PreSurfaceBlurBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/PreSurfaceBlurBinary.bin \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/PreVertFilterBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/PreVertFilterBinary.bin \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/eyeBright.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/eyeBright.png \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/skin_CCT.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/skin_CCT.png \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/skin_back.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/skin_back.png \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/skin_dark.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/skin_dark.png \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/skin_indian.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/skin_indian.png \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/skin_normal.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/skin_normal.png \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/skinmask.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/skinmask.bin \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/fb_model/skinmask.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/skinmask.png \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/filters_lut/B1VLf4peM:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/B1VLf4peM \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/filters_lut/B1aMqioxf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/B1aMqioxf \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/filters_lut/B1nmcmWbG:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/B1nmcmWbG \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/filters_lut/B1si_XbZz:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/B1si_XbZz \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/filters_lut/BJJAwoigM:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/BJJAwoigM \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/filters_lut/BJyKIwqxz:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/BJyKIwqxz \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/filters_lut/ByW7g4bbf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/ByW7g4bbf \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/filters_lut/ByYo3If:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/ByYo3If \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/filters_lut/BycYf7WWz:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/BycYf7WWz \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/filters_lut/EyxRbD2UCe:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/EyxRbD2UCe \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/filters_lut/SJ3mbr6ef:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/SJ3mbr6ef \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/filters_lut/SkpZ8ebbz:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/SkpZ8ebbz \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/filters_lut/Sy4uLSTgf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/Sy4uLSTgf \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/filters_lut/Syt2KeZZf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/Syt2KeZZf \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/filters_lut/black_gold.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/black_gold.bin \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/filters_lut/bowu-2.1.cube.rgb.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/bowu-2.1.cube.rgb.bin \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/filters_lut/bright_coloured.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/bright_coloured.bin \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/filters_lut/default:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/default \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/filters_lut/f_bin_hideaki:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/f_bin_hideaki \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/filters_lut/f_candy_water_weak.cube.rgb.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/f_candy_water_weak.cube.rgb.bin \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/filters_lut/f_contrast_gray_face_dark:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/f_contrast_gray_face_dark \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/filters_lut/f_fuji_strong.cube.rgb.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/f_fuji_strong.cube.rgb.bin \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/filters_lut/f_japan_strong.cube.rgb.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/f_japan_strong.cube.rgb.bin \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/filters_lut/interstellar_space.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/interstellar_space.bin \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/filters_lut/jiari-2.0.cube.rgb.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/jiari-2.0.cube.rgb.bin \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/filters_lut/lvtu-2.0.cube.rgb.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/lvtu-2.0.cube.rgb.bin \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/filters_lut/meiwei-2.2.cube.rgb.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/meiwei-2.2.cube.rgb.bin \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/filters_lut/neon-2020.cube.rgb.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/neon-2020.cube.rgb.bin \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/filters_lut/oppo_video_filter_black_and_white:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/oppo_video_filter_black_and_white \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/filters_lut/oppo_video_filter_highlight:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/oppo_video_filter_highlight \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/filters_lut/oppo_video_filter_ins:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/oppo_video_filter_ins \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/filters_lut/oppo_video_filter_natal:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/oppo_video_filter_natal \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/filters_lut/oppo_video_filter_olympus:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/oppo_video_filter_olympus \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/filters_lut/oppo_video_filter_plain:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/oppo_video_filter_plain \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/filters_lut/oppo_video_filter_show:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/oppo_video_filter_show \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/filters_lut/oppo_video_filter_solar:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/oppo_video_filter_solar \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/filters_lut/oppo_video_filter_strong:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/oppo_video_filter_strong \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/filters_lut/oppo_video_filter_west:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/oppo_video_filter_west \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/filters_lut/p4_1.cube.rgb.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/p4_1.cube.rgb.bin \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/filters_lut/p4_2.cube.rgb.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/p4_2.cube.rgb.bin \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/filters_lut/p4_3.cube.rgb.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/p4_3.cube.rgb.bin \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/filters_lut/p4_4.cube.rgb.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/p4_4.cube.rgb.bin \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/filters_lut/qiuri-2.0.cube.rgb.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/qiuri-2.0.cube.rgb.bin \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/filters_lut/r1JaFSZZG:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/r1JaFSZZG \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/filters_lut/r1PrfoolG:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/r1PrfoolG \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/filters_lut/rJ5g5vPWG:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/rJ5g5vPWG \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/filters_lut/rJxJtmaez:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/rJxJtmaez \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/filters_lut/realme-black-gold-1.1-RGB.CUBE.rgb.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/realme-black-gold-1.1-RGB.CUBE.rgb.bin \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/filters_lut/realme-cyberpunk-RGB.CUBE.rgb.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/realme-cyberpunk-RGB.CUBE.rgb.bin \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/filters_lut/realme-infra-RGB.CUBE.rgb.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/realme-infra-RGB.CUBE.rgb.bin \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/filters_lut/red-red.cube.rgb.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/red-red.cube.rgb.bin \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/filters_lut/rkMhq4ZWf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/rkMhq4ZWf \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/filters_lut/rkx5u4Zbf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/rkx5u4Zbf \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/filters_lut/senlin-2.0.cube.rgb.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/senlin-2.0.cube.rgb.bin \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/filters_lut/sky-blue.cube.rgb.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/sky-blue.cube.rgb.bin \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/filters_lut/tree-green.cube.rgb.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/tree-green.cube.rgb.bin \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/filters_lut/yuanqi-2.2s.cube.rgb.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/yuanqi-2.2s.cube.rgb.bin \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/gasryuv.model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/gasryuv.model \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/license.lic:$(TARGET_COPY_OUT_VENDOR)/etc/camera/license.lic \
-    vendor/realme/salaa/proprietary/vendor/etc/camera/merged_model_post:$(TARGET_COPY_OUT_VENDOR)/etc/camera/merged_model_post \
     vendor/realme/salaa/proprietary/vendor/etc/default_pd_calibration.bin:$(TARGET_COPY_OUT_VENDOR)/etc/default_pd_calibration.bin \
     vendor/realme/salaa/proprietary/vendor/etc/ecc_list.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list.xml \
     vendor/realme/salaa/proprietary/vendor/etc/ecc_list_OP01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP01.xml \
@@ -438,7 +284,9 @@ PRODUCT_COPY_FILES += \
     vendor/realme/salaa/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Vodafone.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Vodafone.xml \
     vendor/realme/salaa/proprietary/vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.4-service.widevine.rc \
     vendor/realme/salaa/proprietary/vendor/etc/init/android.hardware.gnss-service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-service.mediatek.rc \
+    vendor/realme/salaa/proprietary/vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc \
     vendor/realme/salaa/proprietary/vendor/etc/init/android.hardware.keymaster@4.0-service.trustonic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.0-service.trustonic.rc \
+    vendor/realme/salaa/proprietary/vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.c2@1.2-mediatek.rc \
     vendor/realme/salaa/proprietary/vendor/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc \
     vendor/realme/salaa/proprietary/vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc \
     vendor/realme/salaa/proprietary/vendor/etc/init/atci_service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/atci_service.rc \
@@ -591,14 +439,42 @@ PRODUCT_COPY_FILES += \
     vendor/realme/salaa/proprietary/vendor/firmware/soc1_0_ram_bt_2a_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc1_0_ram_bt_2a_1_hdr.bin \
     vendor/realme/salaa/proprietary/vendor/firmware/soc1_0_ram_mcu_2a_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc1_0_ram_mcu_2a_1_hdr.bin \
     vendor/realme/salaa/proprietary/vendor/firmware/soc1_0_ram_wifi_2a_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc1_0_ram_wifi_2a_1_hdr.bin \
+    vendor/realme/salaa/proprietary/vendor/lib/egl/egl.cfg:$(TARGET_COPY_OUT_VENDOR)/lib/egl/egl.cfg \
     vendor/realme/salaa/proprietary/vendor/libnfc-nxp_RF.conf:$(TARGET_COPY_OUT_VENDOR)/libnfc-nxp_RF.conf
 
 PRODUCT_PACKAGES += \
+    libldacBT_abr \
+    libldacBT_enc \
+    liblhdc \
+    liblhdcBT_enc \
+    libaptXHD_encoder \
+    libaptX_encoder \
+    arm.graphics-V1-ndk_platform \
+    libGLES_mali \
+    libGLES_meow \
+    libMEOW_data \
+    libMEOW_gift \
+    libMEOW_qt \
+    libMEOW_trace \
+    android.hardware.graphics.allocator@4.0-impl-mediatek \
+    android.hardware.graphics.mapper@4.0-impl-mediatek \
     thermal_hal \
+    vendor.mediatek.hardware.mms@1.6-impl \
+    vendor.mediatek.hardware.pq@2.13-impl \
+    libDefaultFpsActor \
+    libFrameRecord \
     libJpgEncPipe \
     libMcClient \
+    libNoFpsActor \
+    libOpenCL \
+    libPolarrRender \
     libSoterProvision \
     libTEECommon \
+    libaal_cust \
+    libaal_key \
+    libaal_mtk \
+    libaalservice \
+    libappgamepq \
     libbwc \
     libcares_naptr \
     libconnfem \
@@ -610,11 +486,20 @@ PRODUCT_PACKAGES += \
     libcvsd_mtk \
     libdynamiclog \
     libfile_op \
+    libgamehdr \
+    libged \
+    libgpu_aux \
+    libgpud \
+    libgralloc_extra \
+    libgralloc_metadata \
+    libgralloctypes_mtk \
     libgz_gp_client \
     libgz_uree \
     libhdrvideo \
     libhevce_sb.ca7.android \
     libhwconfigurationutil \
+    libhwm \
+    libimgsensorca \
     libion_mtk \
     libion_ulit \
     libipsec_ims_shr \
@@ -622,6 +507,7 @@ PRODUCT_PACKAGES += \
     libjpeg-alpha_vendor \
     libladder \
     libminiui \
+    libmml \
     libmmprofile \
     libmnetlink_v104 \
     libmsbc_mtk \
@@ -634,18 +520,48 @@ PRODUCT_PACKAGES += \
     libnvram \
     libnvram_sec \
     libpixelflinger \
+    libpq_cust_base \
+    libpqframework \
+    libpqparamparser \
+    libpqpconfig \
+    librgbwlightsensor \
+    libscltm \
     libsimlock \
     libsimmelock \
     libssl-md \
     libssl-ss \
     libsysenv \
     libthha \
+    libudf \
     libvcodec_oal \
     libverno \
     libvpu \
     libvpu5 \
+    libdpframework \
     libmtk_drvb \
+    libpq_prot \
     soter_attk_provision \
+    vendor.mediatek.hardware.mms@1.0 \
+    vendor.mediatek.hardware.mms@1.1 \
+    vendor.mediatek.hardware.mms@1.2 \
+    vendor.mediatek.hardware.mms@1.3 \
+    vendor.mediatek.hardware.mms@1.4 \
+    vendor.mediatek.hardware.mms@1.5 \
+    vendor.mediatek.hardware.mms@1.6 \
+    vendor.mediatek.hardware.pq@2.0 \
+    vendor.mediatek.hardware.pq@2.1 \
+    vendor.mediatek.hardware.pq@2.10 \
+    vendor.mediatek.hardware.pq@2.11 \
+    vendor.mediatek.hardware.pq@2.12 \
+    vendor.mediatek.hardware.pq@2.13 \
+    vendor.mediatek.hardware.pq@2.2 \
+    vendor.mediatek.hardware.pq@2.3 \
+    vendor.mediatek.hardware.pq@2.4 \
+    vendor.mediatek.hardware.pq@2.5 \
+    vendor.mediatek.hardware.pq@2.6 \
+    vendor.mediatek.hardware.pq@2.7 \
+    vendor.mediatek.hardware.pq@2.8 \
+    vendor.mediatek.hardware.pq@2.9 \
     vendor.mediatek.hardware.videotelephony@1.0_vendor \
     vendor.oplus.hardware.commondcs@1.0 \
     audio.primary.mt6785 \
@@ -720,13 +636,6 @@ PRODUCT_PACKAGES += \
     APUWareXrpServer_v2 \
     AVCSecureVdecCA \
     VP9SecureVdecCA \
-    arm.graphics-V1-ndk_platform \
-    libGLES_mali \
-    libGLES_meow \
-    libMEOW_data \
-    libMEOW_gift \
-    libMEOW_qt \
-    libMEOW_trace \
     gc02m1_mipi_raw_20730_IdxMgr \
     gc02m1_mipi_raw_20730_tuning \
     gc02m1b_mipi_mono_20730_IdxMgr \
@@ -734,8 +643,6 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.6-impl-mediatek \
     android.hardware.gnss-impl-mediatek \
     android.hardware.gnss@2.1-impl-mediatek \
-    android.hardware.graphics.allocator@4.0-impl-mediatek \
-    android.hardware.graphics.mapper@4.0-impl-mediatek \
     gps.default \
     hwcomposer.mt6785 \
     kmsetkey.trustonic \
@@ -749,9 +656,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.camera.lomoeffect@1.0-impl \
     vendor.mediatek.hardware.camera.postproc@1.0-impl \
     vendor.mediatek.hardware.keymaster_attestation@1.1-impl \
-    vendor.mediatek.hardware.mms@1.6-impl \
     vendor.mediatek.hardware.nvram@1.1-impl \
-    vendor.mediatek.hardware.pq@2.13-impl \
     vendor.mediatek.hardware.videotelephony@1.0-impl \
     imx350_mipi_raw_IdxMgr \
     imx350_mipi_raw_tuning \
@@ -1369,16 +1274,11 @@ PRODUCT_PACKAGES += \
     libCamera_salawideov8856_Video_1080 \
     libCamera_salawideov8856_Video_4k \
     libDR \
-    libDefaultFpsActor \
     libFaceBeautyCap \
     libFaceBeautyPre \
-    libFrameRecord \
     libMcTeeSoter \
     libMegviiHumBokehPost-mtk \
-    libNoFpsActor \
-    libOpenCL \
     libPerfectlyClearCrux \
-    libPolarrRender \
     libSQLiteModule_VER_ALL \
     libSonyIMX230PdafLibrary \
     libSonyIMX230PdafLibraryWrapper \
@@ -1394,14 +1294,9 @@ PRODUCT_PACKAGES += \
     libVDSuperPhotoAPI \
     libWaterMark \
     lib_bsscore \
-    libaal_cust \
-    libaal_key \
-    libaal_mtk \
-    libaalservice \
     libacdk \
     libakm \
     libapmonitor_vendor \
-    libappgamepq \
     libapu_mdw \
     libapusys \
     libapusys_edma \
@@ -1507,23 +1402,14 @@ PRODUCT_PACKAGES += \
     libfft_vendor \
     libforkexecwrap \
     libformatter \
-    libgamehdr \
-    libged \
-    libgpu_aux \
-    libgpud \
-    libgralloc_extra \
-    libgralloc_metadata \
-    libgralloctypes_mtk \
     libheichal \
     libhwm-oplus \
-    libhwm \
     libhydra \
     libicd_decoder \
     libifcutils_mtk \
     libimageio \
     libimageio_plat_drv \
     libimageio_plat_pipe \
-    libimgsensorca \
     libispcameraca \
     libkmsetkey \
     libksensor \
@@ -1533,7 +1419,6 @@ PRODUCT_PACKAGES += \
     libmipc \
     libml_util \
     libmmagent \
-    libmml \
     libmnl \
     libmpbase \
     libmtk-fusion-ril-prop-vsim \
@@ -1633,16 +1518,10 @@ PRODUCT_PACKAGES += \
     libpkm \
     libpn553_fw \
     libpn557_fw \
-    libpq_cust_base \
-    libpqframework \
-    libpqparamparser \
-    libpqpconfig \
     libratconfig \
     libremosaic_wrapper \
     libremosaiclib \
-    librgbwlightsensor \
     librilfusion \
-    libscltm \
     libsensor_custom \
     libsimaka \
     libsn100u_fw \
@@ -1656,7 +1535,6 @@ PRODUCT_PACKAGES += \
     libtranslator_mdmi_v2.8.2 \
     libtranslator_utils \
     libtrm \
-    libudf \
     liburee_meta_drmkeyinstall \
     libvcodecdrv_header_stub \
     libvia-ril \
@@ -1666,12 +1544,10 @@ PRODUCT_PACKAGES += \
     libwpfa \
     libwvhidl \
     libwvdrmengine \
-    libdpframework \
     libmcv_runtime.mtk \
     libneuron_runtime.5 \
     libneuron_runtime \
     libnir_neon_driver \
-    libpq_prot \
     libmtkcam_streaminfo_plugin-p1stt \
     nwk_opt_imp \
     ov02b1b_mipi_mono_IdxMgr \
@@ -1734,13 +1610,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mdmonitor@1.0 \
     vendor.mediatek.hardware.mmagent@1.0 \
     vendor.mediatek.hardware.mmagent@1.1 \
-    vendor.mediatek.hardware.mms@1.0 \
-    vendor.mediatek.hardware.mms@1.1 \
-    vendor.mediatek.hardware.mms@1.2 \
-    vendor.mediatek.hardware.mms@1.3 \
-    vendor.mediatek.hardware.mms@1.4 \
-    vendor.mediatek.hardware.mms@1.5 \
-    vendor.mediatek.hardware.mms@1.6 \
     vendor.mediatek.hardware.mtkradioex@2.0 \
     vendor.mediatek.hardware.mtkradioex@3.0 \
     vendor.mediatek.hardware.netdagent@1.0 \
@@ -1748,20 +1617,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.nvram@1.1 \
     vendor.mediatek.hardware.nwk_opt@1.0 \
     vendor.mediatek.hardware.power@2.0 \
-    vendor.mediatek.hardware.pq@2.0 \
-    vendor.mediatek.hardware.pq@2.1 \
-    vendor.mediatek.hardware.pq@2.10 \
-    vendor.mediatek.hardware.pq@2.11 \
-    vendor.mediatek.hardware.pq@2.12 \
-    vendor.mediatek.hardware.pq@2.13 \
-    vendor.mediatek.hardware.pq@2.2 \
-    vendor.mediatek.hardware.pq@2.3 \
-    vendor.mediatek.hardware.pq@2.4 \
-    vendor.mediatek.hardware.pq@2.5 \
-    vendor.mediatek.hardware.pq@2.6 \
-    vendor.mediatek.hardware.pq@2.7 \
-    vendor.mediatek.hardware.pq@2.8 \
-    vendor.mediatek.hardware.pq@2.9 \
     vendor.qti.hardware.soter@1.0 \
     vendor.trustonic.tee.tui@1.0 \
     vendor.trustonic.tee@1.0 \
@@ -1777,6 +1632,7 @@ PRODUCT_PACKAGES += \
     libswscale \
     libtrustonic_keybox_ca \
     vendor.oplus.hardware.charger@1.0 \
+    vendor.oplus.hardware.displaypanelfeature@1.0_odm \
     vendor.oplus.hardware.ims@1.0 \
     vendor.oplus.hardware.orms@1.0 \
     vendor.oplus.hardware.subsys@1.0 \
@@ -1852,10 +1708,13 @@ PRODUCT_PACKAGES += \
     gnss@2.1-service-mtk.xml \
     lbs_hidl_service@1.0.xml \
     manifest_android.hardware.drm@1.4-service.widevine.xml \
+    manifest_hwcomposer.xml \
+    manifest_media_c2_V1_2_default.xml \
     manifest_soter.xml \
     gauge_authenticate \
     manifest_oplusSensor.xml \
     manifest_oplus_charger.xml \
+    manifest_oplus_displaypanelfeature.xml \
     manifest_oplus_fingerprint.xml \
     manifest_oplus_ifaa.xml \
     manifest_oplus_mtkmodemaci.xml \
@@ -1880,6 +1739,7 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss-service.mediatek \
     android.hardware.graphics.allocator@4.0-service-mediatek \
     android.hardware.keymaster@4.0-service.trustonic \
+    android.hardware.media.c2@1.2-mediatek-64b \
     android.hardware.neuralnetworks@1.3-service-mtk-neuron \
     android.hardware.secure_element@1.2-service-mediatek \
     camerahalserver \
@@ -1938,6 +1798,7 @@ PRODUCT_PACKAGES += \
     engineer_vendor_shell \
     vendor.oplus.hardware.biometrics.fingerprint@2.1-service \
     vendor.oplus.hardware.charger@1.0-service \
+    vendor.oplus.hardware.displaypanelfeature@1.0-service \
     vendor.oplus.hardware.mtkmodemaci@1.0-service \
     vendor.oplus.hardware.oplusSensor@1.0-service \
     vendor.oplus.hardware.performance@1.0-service \
@@ -1946,7 +1807,10 @@ PRODUCT_PACKAGES += \
     rpmbengclient_test
 
 PRODUCT_PACKAGES += \
+    vendor_lib_hw_vulkan_mt6785_so \
+    vendor_lib_libdpframework_so \
     vendor_lib_libmtk_drvb_so \
+    vendor_lib_libpq_prot_so \
     vendor_lib64_hw_vulkan_mt6785_so \
     vendor_lib64_hw_kmsetkey_default_so \
     vendor_lib64_hw_gatekeeper_trustonic_so \
