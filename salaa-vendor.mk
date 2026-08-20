@@ -142,6 +142,8 @@ PRODUCT_COPY_FILES += \
     vendor/realme/salaa/proprietary/odm/etc/libnfc-nxp-pnscr.conf:$(TARGET_COPY_OUT_ODM)/etc/libnfc-nxp-pnscr.conf \
     vendor/realme/salaa/proprietary/odm/etc/permissions/vendor-oplus-hardware-charger.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/vendor-oplus-hardware-charger.xml \
     vendor/realme/salaa/proprietary/odm/etc/permissions/vendor-oplus-hardware-mtkmodemaci.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/vendor-oplus-hardware-mtkmodemaci.xml \
+    vendor/realme/salaa/proprietary/odm/etc/samsung2048_ana6705_samsung_eyeprotect_data.xml:$(TARGET_COPY_OUT_ODM)/etc/samsung2048_ana6705_samsung_eyeprotect_data.xml \
+    vendor/realme/salaa/proprietary/odm/etc/samsung2048_ana6705_samsung_srgb_eyeprotect_data.xml:$(TARGET_COPY_OUT_ODM)/etc/samsung2048_ana6705_samsung_srgb_eyeprotect_data.xml \
     vendor/realme/salaa/proprietary/odm/etc/sensor/sensor_config.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/sensor_config.json \
     vendor/realme/salaa/proprietary/odm/etc/temperature_profile/sys_high_temp_protect_realme_20741.xml:$(TARGET_COPY_OUT_ODM)/etc/temperature_profile/sys_high_temp_protect_realme_20741.xml \
     vendor/realme/salaa/proprietary/odm/etc/temperature_profile/sys_thermal_control_config.xml:$(TARGET_COPY_OUT_ODM)/etc/temperature_profile/sys_thermal_control_config.xml \
@@ -167,7 +169,19 @@ PRODUCT_COPY_FILES += \
     vendor/realme/salaa/proprietary/odm/firmware/barca_alarm_ring_RTP_120.bin:$(TARGET_COPY_OUT_ODM)/firmware/barca_alarm_ring_RTP_120.bin \
     vendor/realme/salaa/proprietary/odm/firmware/barca_incoming_ring_RTP_121.bin:$(TARGET_COPY_OUT_ODM)/firmware/barca_incoming_ring_RTP_121.bin \
     vendor/realme/salaa/proprietary/odm/firmware/barca_notice_ring_RTP_122.bin:$(TARGET_COPY_OUT_ODM)/firmware/barca_notice_ring_RTP_122.bin \
+    vendor/realme/salaa/proprietary/odm/firmware/fastchg/20171/oplus_vooc_fw_op10.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/20171/oplus_vooc_fw_op10.bin \
+    vendor/realme/salaa/proprietary/odm/firmware/fastchg/20353/oplus_vooc_fw_op10.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/20353/oplus_vooc_fw_op10.bin \
+    vendor/realme/salaa/proprietary/odm/firmware/fastchg/20615/charging_thermal_config_default.txt:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/20615/charging_thermal_config_default.txt \
+    vendor/realme/salaa/proprietary/odm/firmware/fastchg/20662/charging_thermal_config_default.txt:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/20662/charging_thermal_config_default.txt \
+    vendor/realme/salaa/proprietary/odm/firmware/fastchg/20827/oplus_vooc_fw_op10.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/20827/oplus_vooc_fw_op10.bin \
+    vendor/realme/salaa/proprietary/odm/firmware/fastchg/20827/oplus_vooc_fw_rt5125.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/20827/oplus_vooc_fw_rt5125.bin \
+    vendor/realme/salaa/proprietary/odm/firmware/fastchg/20831/oplus_vooc_fw_op10.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/20831/oplus_vooc_fw_op10.bin \
+    vendor/realme/salaa/proprietary/odm/firmware/fastchg/20831/oplus_vooc_fw_rt5125.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/20831/oplus_vooc_fw_rt5125.bin \
+    vendor/realme/salaa/proprietary/odm/firmware/fastchg/21609/charging_thermal_config_default.txt:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/21609/charging_thermal_config_default.txt \
+    vendor/realme/salaa/proprietary/odm/firmware/fastchg/21651/charging_thermal_config_default.txt:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/21651/charging_thermal_config_default.txt \
     vendor/realme/salaa/proprietary/odm/firmware/fastchg/charging_thermal_config_default.txt:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/charging_thermal_config_default.txt \
+    vendor/realme/salaa/proprietary/odm/firmware/tp/20682/FW_GT9886_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/20682/FW_GT9886_SAMSUNG.img \
+    vendor/realme/salaa/proprietary/odm/firmware/tp/20682/FW_GT9886_SAMSUNG_FAE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/20682/FW_GT9886_SAMSUNG_FAE.img \
     vendor/realme/salaa/proprietary/odm/firmware/tp/20682/FW_NT36672C_NF_BOE.bin:$(TARGET_COPY_OUT_ODM)/firmware/tp/20682/FW_NT36672C_NF_BOE.bin \
     vendor/realme/salaa/proprietary/odm/firmware/tp/20682/FW_NT36672C_NF_BOE_FAE.bin:$(TARGET_COPY_OUT_ODM)/firmware/tp/20682/FW_NT36672C_NF_BOE_FAE.bin \
     vendor/realme/salaa/proprietary/odm/firmware/tp/20682/FW_NT36672C_NF_BOE_TEST.bin:$(TARGET_COPY_OUT_ODM)/firmware/tp/20682/FW_NT36672C_NF_BOE_TEST.bin \
@@ -177,9 +191,16 @@ PRODUCT_COPY_FILES += \
     vendor/realme/salaa/proprietary/odm/firmware/tp/20682/FW_NT36672C_NF_TIANMA.bin:$(TARGET_COPY_OUT_ODM)/firmware/tp/20682/FW_NT36672C_NF_TIANMA.bin \
     vendor/realme/salaa/proprietary/odm/firmware/tp/20682/FW_NT36672C_NF_TIANMA_FAE.bin:$(TARGET_COPY_OUT_ODM)/firmware/tp/20682/FW_NT36672C_NF_TIANMA_FAE.bin \
     vendor/realme/salaa/proprietary/odm/firmware/tp/20682/FW_NT36672C_NF_TIANMA_TEST.bin:$(TARGET_COPY_OUT_ODM)/firmware/tp/20682/FW_NT36672C_NF_TIANMA_TEST.bin \
+    vendor/realme/salaa/proprietary/odm/firmware/tp/20682/LIMIT_GT9886_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/20682/LIMIT_GT9886_SAMSUNG.img \
     vendor/realme/salaa/proprietary/odm/firmware/tp/20682/LIMIT_NT36672C_NF_BOE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/20682/LIMIT_NT36672C_NF_BOE.img \
     vendor/realme/salaa/proprietary/odm/firmware/tp/20682/LIMIT_NT36672C_NF_JDI.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/20682/LIMIT_NT36672C_NF_JDI.img \
     vendor/realme/salaa/proprietary/odm/firmware/tp/20682/LIMIT_NT36672C_NF_TIANMA.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/20682/LIMIT_NT36672C_NF_TIANMA.img \
+    vendor/realme/salaa/proprietary/odm/firmware/tp/20730/FW_FT3518_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/20730/FW_FT3518_SAMSUNG.img \
+    vendor/realme/salaa/proprietary/odm/firmware/tp/20730/FW_FT3518_SAMSUNG_FAE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/20730/FW_FT3518_SAMSUNG_FAE.img \
+    vendor/realme/salaa/proprietary/odm/firmware/tp/20730/FW_GT9886_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/20730/FW_GT9886_SAMSUNG.img \
+    vendor/realme/salaa/proprietary/odm/firmware/tp/20730/FW_GT9886_SAMSUNG_FAE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/20730/FW_GT9886_SAMSUNG_FAE.img \
+    vendor/realme/salaa/proprietary/odm/firmware/tp/20730/LIMIT_FT3518_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/20730/LIMIT_FT3518_SAMSUNG.img \
+    vendor/realme/salaa/proprietary/odm/firmware/tp/20730/LIMIT_GT9886_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/20730/LIMIT_GT9886_SAMSUNG.img \
     vendor/realme/salaa/proprietary/odm/init.oplus.fingerprints.rc:$(TARGET_COPY_OUT_ODM)/init.oplus.fingerprints.rc \
     vendor/realme/salaa/proprietary/odm/init.oplus.seccommon.rc:$(TARGET_COPY_OUT_ODM)/init.oplus.seccommon.rc \
     vendor/realme/salaa/proprietary/odm/vendor/app/mcRegistry/030b0000000000000000000000000000.drbin:$(TARGET_COPY_OUT_ODM)/vendor/app/mcRegistry/030b0000000000000000000000000000.drbin \
@@ -297,6 +318,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/salaa/proprietary/vendor/etc/init/fuelgauged_nvram_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_nvram_init.rc \
     vendor/realme/salaa/proprietary/vendor/etc/init/gsm0710muxd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/gsm0710muxd.rc \
     vendor/realme/salaa/proprietary/vendor/etc/init/init.bip.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.bip.rc \
+    vendor/realme/salaa/proprietary/vendor/etc/init/init.bt_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.bt_drv.rc \
     vendor/realme/salaa/proprietary/vendor/etc/init/init.cccimdinit.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccimdinit.rc \
     vendor/realme/salaa/proprietary/vendor/etc/init/init.cccirpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccirpcd.rc \
     vendor/realme/salaa/proprietary/vendor/etc/init/init.connfem.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.connfem.rc \
@@ -565,7 +587,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.videotelephony@1.0_vendor \
     vendor.oplus.hardware.commondcs@1.0 \
     audio.primary.mt6785 \
-    audio.r_submix.mt6785 \
     sound_trigger.primary.default \
     libHEVCdec_sa.ca7.android \
     libMtkSpeechEnh \
@@ -1321,6 +1342,7 @@ PRODUCT_PACKAGES += \
     libasn1c_core \
     libasn1c_mapi \
     libasn1c_mdmi \
+    libbluetooth_hw_test \
     libbluetooth_mtk \
     libbluetooth_mtk_pure \
     libbluetooth_relayer \
@@ -1625,6 +1647,7 @@ PRODUCT_PACKAGES += \
     libteeservice_client.trustonic \
     libawinicsmartpaparse \
     libdpservice \
+    libmxmafa \
     libormshalclient \
     libpnscr2 \
     librpmbengclient \
@@ -1634,6 +1657,7 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.charger@1.0 \
     vendor.oplus.hardware.displaypanelfeature@1.0_odm \
     vendor.oplus.hardware.ims@1.0 \
+    vendor.oplus.hardware.oplusSensor@1.0 \
     vendor.oplus.hardware.orms@1.0 \
     vendor.oplus.hardware.subsys@1.0 \
     awinic.haptic.effect \
@@ -1680,7 +1704,6 @@ PRODUCT_PACKAGES += \
     libgf_hal_G7 \
     libhwm-oplus_odm \
     libmmc \
-    libmxmafa \
     libnxprecord \
     libnxpspeech \
     liboemcrypto \
@@ -1694,7 +1717,6 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.commondcs@1.0_odm \
     vendor.oplus.hardware.engcamera@1.0 \
     vendor.oplus.hardware.mtkmodemaci@1.0 \
-    vendor.oplus.hardware.oplusSensor@1.0 \
     vendor.oplus.hardware.performance@1.0 \
     vendor.oplus.hardware.radio@1.0 \
     vendor.oplus.hardware.touch@1.0 \
@@ -1722,6 +1744,7 @@ PRODUCT_PACKAGES += \
     manifest_oplus_touch.xml \
     AgentTest \
     atci_service \
+    autobt \
     bip \
     ccci_mdinit \
     ccci_rpcd \
