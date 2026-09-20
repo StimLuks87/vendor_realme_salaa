@@ -527,7 +527,6 @@ PRODUCT_PACKAGES += \
     libipsec_ims_shr \
     libjpeg-alpha-oal_vendor \
     libjpeg-alpha_vendor \
-    libladder \
     libminiui \
     libmml \
     libmmprofile \
